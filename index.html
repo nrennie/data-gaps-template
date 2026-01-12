@@ -3,151 +3,191 @@ layout: default
 title: Data Gaps
 ---
 
-<h1 class='title'>Data Gaps Template</h1>
+<h1 class="title">Data Gaps Template</h1>
 
-<div class='content'>
+<div class="content">
   <p>
-    To fully explore how this template works, follow the instructions in <a href="https://github.com/climatechange-ai/data-gaps-template/blob/main/README.md">the README</a>.
+    To fully explore how this template works, follow the instructions in
+    <a
+      href="https://github.com/climatechange-ai/data-gaps-template/blob/main/README.md"
+      >the README</a
+    >.
   </p>
   <p>
-  <a href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form" target="_blank" class='button is-info'>New Data Gap</a>
+    <a
+      href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form"
+      target="_blank"
+      class="button is-info"
+      >New Data Gap</a
+    >
   </p>
 </div>
 
-<div id='search-wrapper'>
-  <div class='columns'>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Text Search</label>
-        <div class='control'>
-          <input class='input is-small' id='text-search' placeholder='Enter search terms...' type='search'/>
+<div id="search-wrapper">
+  <div class="columns">
+    <div class="column">
+      <div class="field">
+        <label class="label">Text Search</label>
+        <div class="control">
+          <input
+            class="input is-small"
+            id="text-search"
+            placeholder="Enter search terms..."
+            type="search"
+          />
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Data Gap Types (<a href="taxonomy">definitions</a>)</label>
-        <div class='control is-expanded'>
-          <select multiple id='gap-types'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label"
+          >Data Gap Types (<a href="taxonomy">definitions</a>)</label
+        >
+        <div class="control is-expanded">
+          <select multiple id="gap-types"></select>
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Data Modalities</label>
-        <div class='control is-expanded'>
-          <select multiple id='modalities'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label">Data Modalities</label>
+        <div class="control is-expanded">
+          <select multiple id="modalities"></select>
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Sectors</label>
-        <div class='control is-expanded'>
-          <select multiple id='sectors'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label">Sectors</label>
+        <div class="control is-expanded">
+          <select multiple id="sectors"></select>
         </div>
       </div>
     </div>
-    <div class='column is-narrow'>
-      <button class='button is-small clear-filters' id='clear-filters' style='display: none; margin-top: 36px'>Clear filters</button>
+    <div class="column is-narrow">
+      <button
+        class="button is-small clear-filters"
+        id="clear-filters"
+        style="display: none; margin-top: 36px"
+      >
+        Clear filters
+      </button>
     </div>
   </div>
 
-  <div class='tabs is-boxed is-large'>
+  <div class="tabs is-boxed is-large">
     <ul>
-      <li data-show='by-use-case' class='is-active'><a href='javascript:void(0)'>By Use Case</a></li>
-      <li data-show='by-dataset'><a href='javascript:void(0)'>By Dataset or Data Wish</a></li>
+      <li data-show="by-use-case" class="is-active">
+        <a href="javascript:void(0)">By Use Case</a>
+      </li>
+      <li data-show="by-dataset">
+        <a href="javascript:void(0)">By Dataset or Data Wish</a>
+      </li>
     </ul>
   </div>
 
-  <br>
+  <br />
 </div>
 
 <!-- control which tab displays -->
-<div id='visibility-toggle' class='by-use-case'>
-
+<div id="visibility-toggle" class="by-use-case">
   <!-- use case tab -->
-  <div id='by-use-case'>
-
+  <div id="by-use-case">
     <!-- table of use cases -->
-    <table class='filterable-table table is-bordered'>
+    <table class="filterable-table table is-bordered">
       <thead>
         <th>Use Case</th>
         <th>Gap Types</th>
         <th>Sectors</th>
       </thead>
       <tbody>
-        {% for uc in site.data.data_gaps_use_cases %}
-          {% assign use_case = uc[1] %}
+        {% for uc in site.data.data_gaps_use_cases %} {% assign use_case = uc[1]
+        %} {% unless use_case.publishable %} {% continue %} {% endunless %}
 
-          {% unless use_case.publishable %}
-            {% continue %}
-          {% endunless %}
+        <!-- use case row -->
+        <tr
+          id="{{ use_case.id }}"
+          class="data-gaps-details use-case-row"
+          data-sectors="{{ use_case.sectors | jsonify }}"
+        >
+          <td>
+            {{ use_case.name }}
 
-          <!-- use case row -->
-          <tr
-            id='{{ use_case.id }}'
-            class='data-gaps-details use-case-row'
-            data-sectors='{{ use_case.sectors | jsonify }}'
-          >
-            <td>
-              {{ use_case.name }}
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+              {% if use_case.introduction %} {{ use_case.introduction }} {%
+              endif %}
 
-                {% if use_case.introduction %}
-                  {{ use_case.introduction }}
-                {% endif %}
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Dataset</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for data_gap_id in use_case.data_gaps %} {% assign data_gap
+                  = site.data.data_gaps[data_gap_id] %} {% assign dataset_id =
+                  data_gap.dataset | first %} {% assign dataset =
+                  site.data.data_gaps_datasets[dataset_id] %} {% unless
+                  dataset.publishable %} {% continue %} {% endunless %}
 
-                <table class='table is-bordered'>
-                  <thead><tr><th>Dataset</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    {% for data_gap_id in use_case.data_gaps %}
-                      {% assign data_gap = site.data.data_gaps[data_gap_id] %}
-                      {% assign dataset_id = data_gap.dataset | first %}
-                      {% assign dataset = site.data.data_gaps_datasets[dataset_id] %}
-
-                      {% unless dataset.publishable %}
-                        {% continue %}
-                      {% endunless %}
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='{{ data_gap.alltypes | jsonify }}'
-                        data-existence='{{ dataset.existence }}'
-                        data-modalities='{{ dataset.modalities | jsonify }}'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="{{ data_gap.alltypes | jsonify }}"
+                    data-existence="{{ dataset.existence }}"
+                    data-modalities="{{ dataset.modalities | jsonify }}"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="{{ data_gap.id }}"
+                        >{{ dataset.name }}</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='{{ data_gap.id }}'>{{ dataset.name }}</a></td>
-                        <td>{% include data_gap_details.html data_gap=data_gap fallback_summary=dataset.introduction dataset=dataset use_case=use_case first="use_case" %}</td>
-                      </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
+                    </td>
+                    <td>
+                      {% include data_gap_details.html data_gap=data_gap
+                      fallback_summary=dataset.introduction dataset=dataset
+                      use_case=use_case first="use_case" %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
         {% endfor %}
       </tbody>
     </table>
 
-    <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form" target="_blank">contribute a new data gap</a>.</p>
+    <div class="no-records" style="display: none">
+      <p>
+        No records found! Try
+        <a href="javascript:void(0)" class="clear-filters">clearing filters</a>,
+        or
+        <a
+          href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form"
+          target="_blank"
+          >contribute a new data gap</a
+        >.
+      </p>
     </div>
   </div>
 
   <!-- dataset tab -->
-  <div id='by-dataset'>
-
+  <div id="by-dataset">
     <!-- table of datasets -->
-    <table class='filterable-table table is-bordered'>
+    <table class="filterable-table table is-bordered">
       <thead>
         <th>Dataset</th>
         <th>Gap Types</th>
@@ -155,77 +195,98 @@ title: Data Gaps
         <th>Sectors</th>
       </thead>
       <tbody>
-        {% for ds in site.data.data_gaps_datasets %}
-          {% assign dataset = ds[1] %}
+        {% for ds in site.data.data_gaps_datasets %} {% assign dataset = ds[1]
+        %} {% unless dataset.publishable %} {% continue %} {% endunless %}
 
-          {% unless dataset.publishable %}
-            {% continue %}
-          {% endunless %}
+        <!-- dataset row -->
+        <tr
+          id="{{ dataset.id }}"
+          class="data-gaps-details dataset-row"
+          data-sectors="{{ dataset.sectors | jsonify }}"
+          data-existence="{{ dataset.existence }}"
+          data-modalities="{{ dataset.modalities | jsonify }}"
+        >
+          <td>
+            {{ dataset.name }}
 
-          <!-- dataset row -->
-          <tr
-            id='{{ dataset.id }}'
-            class='data-gaps-details dataset-row'
-            data-sectors='{{ dataset.sectors | jsonify }}'
-            data-existence='{{ dataset.existence }}'
-            data-modalities='{{ dataset.modalities | jsonify }}'
-          >
-            <td>
-              {{ dataset.name }}
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+              {% if dataset.introduction %} {{ dataset.introduction }} {% endif
+              %} {% if dataset.dataset_url %}
+              <p>
+                <a
+                  href="{{ dataset.dataset_url }}"
+                  class="button is-info"
+                  target="_blank"
+                  >View dataset</a
+                >
+              </p>
+              {% endif %}
 
-                {% if dataset.introduction %}
-                  {{ dataset.introduction }}
-                {% endif %}
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Use Case</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for data_gap_id in dataset.data_gaps %} {% assign data_gap
+                  = site.data.data_gaps[data_gap_id] %} {% assign use_case_id =
+                  data_gap.use_case | first %} {% assign use_case =
+                  site.data.data_gaps_use_cases[use_case_id] %} {% unless
+                  use_case.publishable %} {% continue %} {% endunless %}
 
-                {% if dataset.dataset_url %}
-                    <p>
-                        <a href='{{ dataset.dataset_url }}' class='button is-info' target='_blank'>View dataset</a>
-                    </p>
-                {% endif %}
-
-                <table class='table is-bordered'>
-                  <thead><tr><th>Use Case</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    {% for data_gap_id in dataset.data_gaps %}
-                      {% assign data_gap = site.data.data_gaps[data_gap_id] %}
-                      {% assign use_case_id = data_gap.use_case | first %}
-                      {% assign use_case = site.data.data_gaps_use_cases[use_case_id] %}
-
-                      {% unless use_case.publishable %}
-                        {% continue %}
-                      {% endunless %}
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='{{ data_gap.alltypes | jsonify }}'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="{{ data_gap.alltypes | jsonify }}"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="{{ data_gap.id }}"
+                        >{{ use_case.name }}</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='{{ data_gap.id }}'>{{ use_case.name }}</a></td>
-                        <td>{% include data_gap_details.html data_gap=data_gap fallback_summary=use_case.introduction dataset=dataset use_case=use_case first="dataset" %}</td>
-                      </tr>
-                    {% endfor %}
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='modalities'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
+                    </td>
+                    <td>
+                      {% include data_gap_details.html data_gap=data_gap
+                      fallback_summary=use_case.introduction dataset=dataset
+                      use_case=use_case first="dataset" %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="modalities"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
         {% endfor %}
       </tbody>
     </table>
 
-    <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form" target="_blank">contribute a new data gap</a>.</p>
+    <div class="no-records" style="display: none">
+      <p>
+        No records found! Try
+        <a href="javascript:void(0)" class="clear-filters">clearing filters</a>,
+        or
+        <a
+          href="https://airtable.com/{{ site.airtable_base_id }}/{{ site.new_gap_form_id }}/form"
+          target="_blank"
+          >contribute a new data gap</a
+        >.
+      </p>
     </div>
   </div>
 </div>

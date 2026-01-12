@@ -11,6 +11,8 @@
 
 ## To deploy with GitHub Pages
 
+This is deployed automatically using GitHub Actions. Make sure the `.github/workflows/deploy.yml` script is uploaded to GitHub. In Settings, go to `Pages` -> Deploy from a branch. Set the branch to `gh-pages` -> `(root)`.
+
 ## To adapt data
 
 The data gaps visualization is based on Airtable data. For this repository, it's based on [this Airtable base](https://airtable.com/appY2hJvi0WWoFOPx/shremrztqdMIGGLkC).

@@ -22,120 +22,147 @@
   <body>
     <section class='section'>
       <div class='container'>
-        <h1 class='title'>Data Gaps Template</h1>
+        <h1 class="title">Data Gaps Template</h1>
 
-<div class='content'>
+<div class="content">
   <p>
-    To fully explore how this template works, follow the instructions in <a href="https://github.com/climatechange-ai/data-gaps-template/blob/main/README.md">the README</a>.
+    To fully explore how this template works, follow the instructions in
+    <a
+      href="https://github.com/climatechange-ai/data-gaps-template/blob/main/README.md"
+      >the README</a
+    >.
   </p>
   <p>
-  <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank" class='button is-info'>New Data Gap</a>
+    <a
+      href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form"
+      target="_blank"
+      class="button is-info"
+      >New Data Gap</a
+    >
   </p>
 </div>
 
-<div id='search-wrapper'>
-  <div class='columns'>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Text Search</label>
-        <div class='control'>
-          <input class='input is-small' id='text-search' placeholder='Enter search terms...' type='search'/>
+<div id="search-wrapper">
+  <div class="columns">
+    <div class="column">
+      <div class="field">
+        <label class="label">Text Search</label>
+        <div class="control">
+          <input
+            class="input is-small"
+            id="text-search"
+            placeholder="Enter search terms..."
+            type="search"
+          />
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Data Gap Types (<a href="taxonomy">definitions</a>)</label>
-        <div class='control is-expanded'>
-          <select multiple id='gap-types'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label"
+          >Data Gap Types (<a href="taxonomy">definitions</a>)</label
+        >
+        <div class="control is-expanded">
+          <select multiple id="gap-types"></select>
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Data Modalities</label>
-        <div class='control is-expanded'>
-          <select multiple id='modalities'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label">Data Modalities</label>
+        <div class="control is-expanded">
+          <select multiple id="modalities"></select>
         </div>
       </div>
     </div>
-    <div class='column'>
-      <div class='field'>
-        <label class='label'>Sectors</label>
-        <div class='control is-expanded'>
-          <select multiple id='sectors'></select>
+    <div class="column">
+      <div class="field">
+        <label class="label">Sectors</label>
+        <div class="control is-expanded">
+          <select multiple id="sectors"></select>
         </div>
       </div>
     </div>
-    <div class='column is-narrow'>
-      <button class='button is-small clear-filters' id='clear-filters' style='display: none; margin-top: 36px'>Clear filters</button>
+    <div class="column is-narrow">
+      <button
+        class="button is-small clear-filters"
+        id="clear-filters"
+        style="display: none; margin-top: 36px"
+      >
+        Clear filters
+      </button>
     </div>
   </div>
 
-  <div class='tabs is-boxed is-large'>
+  <div class="tabs is-boxed is-large">
     <ul>
-      <li data-show='by-use-case' class='is-active'><a href='javascript:void(0)'>By Use Case</a></li>
-      <li data-show='by-dataset'><a href='javascript:void(0)'>By Dataset or Data Wish</a></li>
+      <li data-show="by-use-case" class="is-active">
+        <a href="javascript:void(0)">By Use Case</a>
+      </li>
+      <li data-show="by-dataset">
+        <a href="javascript:void(0)">By Dataset or Data Wish</a>
+      </li>
     </ul>
   </div>
 
-  <br>
+  <br />
 </div>
 
 <!-- control which tab displays -->
-<div id='visibility-toggle' class='by-use-case'>
-
+<div id="visibility-toggle" class="by-use-case">
   <!-- use case tab -->
-  <div id='by-use-case'>
-
+  <div id="by-use-case">
     <!-- table of use cases -->
-    <table class='filterable-table table is-bordered'>
+    <table class="filterable-table table is-bordered">
       <thead>
         <th>Use Case</th>
         <th>Gap Types</th>
         <th>Sectors</th>
       </thead>
       <tbody>
-        
           
 
-          
+        <!-- use case row -->
+        <tr
+          id="better-public-policy"
+          class="data-gaps-details use-case-row"
+          data-sectors="["recUD3T8Vxf1E7wVs"]"
+        >
+          <td>
+            Better Public Policy
 
-          <!-- use case row -->
-          <tr
-            id='better-public-policy'
-            class='data-gaps-details use-case-row'
-            data-sectors='["recUD3T8Vxf1E7wVs"]'
-          >
-            <td>
-              Better Public Policy
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+               <p>A lot of our public policy isn’t based on good, reliable data. That should change.</p> 
 
-                
-                  <p>A lot of our public policy isn’t based on good, reliable data. That should change.</p>
-                
-
-                <table class='table is-bordered'>
-                  <thead><tr><th>Dataset</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    
-                      
-                      
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Dataset</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
                       
 
-                      
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='["W:"]'
-                        data-existence='Wish'
-                        data-modalities='["Timeseries","Tabular","Text"]'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="["W:"]"
+                    data-existence="Wish"
+                    data-modalities="["Timeseries","Tabular","Text"]"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="better-public-policy-boiler-data"
+                        >Boiler Data</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='better-public-policy-boiler-data'>Boiler Data</a></td>
-                        <td>
+                    </td>
+                    <td>
+                      
 
 
   <p>We need better data on the UK’s gas boilers to help us achieve net zero and ensure landlords are keeping their tenants safe. The Government could achieve this by requiring gas safety certificates and boiler service reports to be registered centrally, just like energy performance certificates.</p>
@@ -197,60 +224,64 @@
     </footer>
   </div>
 </div>
-</td>
-                      </tr>
-                    
-                  </tbody>
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
-        
+
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
           
 
-          
+        <!-- use case row -->
+        <tr
+          id="improving-legal-outcomes"
+          class="data-gaps-details use-case-row"
+          data-sectors="["rec8AGIw134PanOsZ","recUD3T8Vxf1E7wVs"]"
+        >
+          <td>
+            Improving Legal Outcomes
 
-          <!-- use case row -->
-          <tr
-            id='improving-legal-outcomes'
-            class='data-gaps-details use-case-row'
-            data-sectors='["rec8AGIw134PanOsZ","recUD3T8Vxf1E7wVs"]'
-          >
-            <td>
-              Improving Legal Outcomes
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+               <p>Legal outcomes in the UK system could be improved. Filling data gaps would be helpful to improve it.</p> 
 
-                
-                  <p>Legal outcomes in the UK system could be improved. Filling data gaps would be helpful to improve it.</p>
-                
-
-                <table class='table is-bordered'>
-                  <thead><tr><th>Dataset</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    
-                      
-                      
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Dataset</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
                       
 
-                      
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='["S1","U2"]'
-                        data-existence='Existing'
-                        data-modalities='["Tabular"]'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="["S1","U2"]"
+                    data-existence="Existing"
+                    data-modalities="["Tabular"]"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="improving-legal-outcomes-unrepresented-defendants"
+                        >Unrepresented Defendants</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='improving-legal-outcomes-unrepresented-defendants'>Unrepresented Defendants</a></td>
-                        <td>
+                    </td>
+                    <td>
+                      
 
 
   <p>Unrepresented defendants can face harsher justice outcomes, are more likely to have negative court experiences and typically slow down hearings. Despite public interest in this data, no official data is published on unrepresented defendants.</p>
@@ -320,34 +351,43 @@
     </footer>
   </div>
 </div>
-</td>
-                      </tr>
-                    
-                  </tbody>
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
+
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
         
       </tbody>
     </table>
 
-    <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
+    <div class="no-records" style="display: none">
+      <p>
+        No records found! Try
+        <a href="javascript:void(0)" class="clear-filters">clearing filters</a>,
+        or
+        <a
+          href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form"
+          target="_blank"
+          >contribute a new data gap</a
+        >.
+      </p>
     </div>
   </div>
 
   <!-- dataset tab -->
-  <div id='by-dataset'>
-
+  <div id="by-dataset">
     <!-- table of datasets -->
-    <table class='filterable-table table is-bordered'>
+    <table class="filterable-table table is-bordered">
       <thead>
         <th>Dataset</th>
         <th>Gap Types</th>
@@ -355,52 +395,58 @@
         <th>Sectors</th>
       </thead>
       <tbody>
-        
           
 
-          
+        <!-- dataset row -->
+        <tr
+          id="boiler-data"
+          class="data-gaps-details dataset-row"
+          data-sectors="["recoCHzI27qe9Xzd9"]"
+          data-existence="Wish"
+          data-modalities="["Timeseries","Tabular","Text"]"
+        >
+          <td>
+            Boiler Data
 
-          <!-- dataset row -->
-          <tr
-            id='boiler-data'
-            class='data-gaps-details dataset-row'
-            data-sectors='["recoCHzI27qe9Xzd9"]'
-            data-existence='Wish'
-            data-modalities='["Timeseries","Tabular","Text"]'
-          >
-            <td>
-              Boiler Data
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+               <p>This is a <strong><em>longer description.</em></strong></p>  
+              <p>
+                <a
+                  href="https://www.centreforpublicdata.org/boiler-data"
+                  class="button is-info"
+                  target="_blank"
+                  >View dataset</a
+                >
+              </p>
+              
 
-                
-                  <p>This is a <strong><em>longer description.</em></strong></p>
-                
-
-                
-                    <p>
-                        <a href='https://www.centreforpublicdata.org/boiler-data' class='button is-info' target='_blank'>View dataset</a>
-                    </p>
-                
-
-                <table class='table is-bordered'>
-                  <thead><tr><th>Use Case</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Use Case</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
                       
-                      
-                      
 
-                      
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='["W:"]'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="["W:"]"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="better-public-policy-boiler-data"
+                        >Better Public Policy</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='better-public-policy-boiler-data'>Better Public Policy</a></td>
-                        <td>
+                    </td>
+                    <td>
+                      
 
 
   <p>We need better data on the UK’s gas boilers to help us achieve net zero and ensure landlords are keeping their tenants safe. The Government could achieve this by requiring gas safety certificates and boiler service reports to be registered centrally, just like energy performance certificates.</p>
@@ -462,70 +508,78 @@
     </footer>
   </div>
 </div>
-</td>
-                      </tr>
-                    
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='modalities'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
-        
+
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="modalities"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
           
 
-          
+        <!-- dataset row -->
+        <tr
+          id="unrepresented-defendants"
+          class="data-gaps-details dataset-row"
+          data-sectors="["rec8AGIw134PanOsZ"]"
+          data-existence="Existing"
+          data-modalities="["Tabular"]"
+        >
+          <td>
+            Unrepresented Defendants
 
-          <!-- dataset row -->
-          <tr
-            id='unrepresented-defendants'
-            class='data-gaps-details dataset-row'
-            data-sectors='["rec8AGIw134PanOsZ"]'
-            data-existence='Existing'
-            data-modalities='["Tabular"]'
-          >
-            <td>
-              Unrepresented Defendants
+            <details>
+              <summary>Details (click to expand)</summary>
 
-              <details>
-                <summary>Details (click to expand)</summary>
+               <p>This is a longer introduction to the problem of unrepresented defendants.</p>
 
-                
-                  <p>This is a longer introduction to the problem of unrepresented defendants.</p>
+<p>This can have <strong><em>formatting</em></strong> or <a target="_blank" href="https://www.centreforpublicdata.org/">links</a>.</p>  
+              <p>
+                <a
+                  href="https://www.centreforpublicdata.org/blog/understanding-the-unrepresented-the-case-for-better-data-on-legal-representation-in-courts"
+                  class="button is-info"
+                  target="_blank"
+                  >View dataset</a
+                >
+              </p>
+              
 
-<p>This can have <strong><em>formatting</em></strong> or <a target="_blank" href="https://www.centreforpublicdata.org/">links</a>.</p>
-                
-
-                
-                    <p>
-                        <a href='https://www.centreforpublicdata.org/blog/understanding-the-unrepresented-the-case-for-better-data-on-legal-representation-in-courts' class='button is-info' target='_blank'>View dataset</a>
-                    </p>
-                
-
-                <table class='table is-bordered'>
-                  <thead><tr><th>Use Case</th><th>Data Gap Summary</th></tr></thead>
-                  <tbody>
-                    
+              <table class="table is-bordered">
+                <thead>
+                  <tr>
+                    <th>Use Case</th>
+                    <th>Data Gap Summary</th>
+                  </tr>
+                </thead>
+                <tbody>
                       
-                      
-                      
 
-                      
-
-                      <!-- data gap row -->
-                      <tr
-                        class='data-gap-row'
-                        data-types='["S1","U2"]'
+                  <!-- data gap row -->
+                  <tr
+                    class="data-gap-row"
+                    data-types="["S1","U2"]"
+                  >
+                    <td>
+                      <a
+                        class="view-data-gap"
+                        href="javascript:void(0)"
+                        data-gap="improving-legal-outcomes-unrepresented-defendants"
+                        >Improving Legal Outcomes</a
                       >
-                        <td><a class='view-data-gap' href='javascript:void(0)' data-gap='improving-legal-outcomes-unrepresented-defendants'>Improving Legal Outcomes</a></td>
-                        <td>
+                    </td>
+                    <td>
+                      
 
 
   <p>Unrepresented defendants can face harsher justice outcomes, are more likely to have negative court experiences and typically slow down hearings. Despite public interest in this data, no official data is published on unrepresented defendants.</p>
@@ -595,28 +649,39 @@
     </footer>
   </div>
 </div>
-</td>
-                      </tr>
-                    
-                </table>
-              </details>
-            </td>
-            <td>
-              <div class='types'></div>
-            </td>
-            <td>
-              <div class='modalities'></div>
-            </td>
-            <td>
-              <div class='sectors'></div>
-            </td>
-          </tr>
+
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </details>
+          </td>
+          <td>
+            <div class="types"></div>
+          </td>
+          <td>
+            <div class="modalities"></div>
+          </td>
+          <td>
+            <div class="sectors"></div>
+          </td>
+        </tr>
         
       </tbody>
     </table>
 
-    <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
+    <div class="no-records" style="display: none">
+      <p>
+        No records found! Try
+        <a href="javascript:void(0)" class="clear-filters">clearing filters</a>,
+        or
+        <a
+          href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form"
+          target="_blank"
+          >contribute a new data gap</a
+        >.
+      </p>
     </div>
   </div>
 </div>
