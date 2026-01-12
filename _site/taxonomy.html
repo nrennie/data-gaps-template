@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Gaps Demo</title>
+
+    <!-- CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- jQuery Mark -->
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+
+    <!-- Chosen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js" integrity="sha512-rMGGF4wg1R73ehtnxXBt5mbUfN9JUJwbk21KMlnLZDJh7BkPmeovBuddZCENJddHYYMkCh9hPFnPmS9sspki8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" integrity="sha512-yVvxUQV0QESBt1SyZbNJMAwyKvFTLMyXSyBHDO4BG5t7k/Lw34tyqlSDlKIrIENIzCl+RVUNjmCPG+V/GMesRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class='section'>
+      <div class='container'>
+        <h1 class='title'>Taxonomy of Data Gaps (<a href='index'>Back</a>)</h1>
+
+<div class='content'>
+  <p>
+  Data gaps are classified within six categories: Wish, Obtainability, Usability, Reliability, Sufficiency, and Miscellaneous/Other.
+  </p>
+
+  <p>
+  &#8227;<b>Type W: Wish</b> - <i>Dataset does not exist.</i>
+  </p>
+
+  <p>
+  &#8227;<b>Type O: Obtainability</b> - <i>Dataset is not easily obtainable.</i>
+  <ul>
+    <li><b>O1: Findability</b> - <i>Dataset is not easy to find for humans and/or computers.</i></li>
+      <ul>
+        <li>Dataset is not Findable according to <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> (“metadata and data should be easy to find for both humans and computers”).</li>
+      </ul>
+    <li><b>O2: Accessibility</b> - <i>Dataset is difficult to access.</i></li>
+      <ul>
+        <li>Dataset is not Accessible according to <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> (“once the user finds the required data, she/he/they need to know how they can be accessed, possibly including authentication and authorisation”).</li>
+        <li>Dataset is not freely available to the public.</li>
+        <li>Obtaining access to the dataset requires lengthy bureaucratic approval or may otherwise be difficult/infeasible in practice.</li>
+      </ul>
+  </ul>
+  </p>
+
+  <p>
+  &#8227;<b>Type U: Usability</b> - <i>Data is not readily usable.</i>
+  <ul>
+    <li><b>U1: Structure</b> - <i>Dataset is not machine-readable, well-formatted, and/or interoperable.</i></li>
+      <ul>
+        <li>Dataset is not in a machine-readable format.</li>
+        <li>Dataset is not in a uniform, consistent, and standardized format. (See also <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> R1.3.)</li>
+        <li>Dataset is not Interoperable according to <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> (“data [are amenable to being] integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing”).</li>
+      </ul>
+    <li><b>U2: Aggregation</b> - <i>Data is scattered and requires consolidation.</i></li>
+      <ul>
+        <li>Data is scattered and requires consolidation into a centralized dataset.</li>
+      </ul>
+    <li><b>U3: Usage Rights</b> - <i>Data usage rights are unclear or restrictive.</i></li>
+      <ul>
+        <li>Data usage rights are unclear (see also <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> R1.1).</li>
+        <li>Dataset is released under a restrictive usage license.</li>
+      </ul>
+    <li><b>U4: Documentation</b> - <i>Documentation on data usage requires improvement.</i></li>
+      <ul>
+        <li>Documentation or other types of metadata required to help users understand how to use the data are incomplete, lacking in detail, or unclear (see also <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> R1 and <a href="https://arxiv.org/abs/1803.09010" target="_blank">Datasheets for Datasets</a>).</li>
+      </ul>
+    <li><b>U5: Pre-processing</b> - <i>Data needs to be processed or cleaned prior to analysis.</i></li>
+      <ul>
+        <li>Data contains an excessive amount of missing values, noise, and duplicates that need to be cleaned.</li>
+        <li>Data needs to be annotated.</li>
+      </ul>
+    <li><b>U6: Large Volume</b> - <i>Usability is impeded by large data volume.</i></li>
+      <ul>
+        <li>Dataset requires significant computational resources to process, presenting challenges for users who lack sufficient computing power.</li>
+        <li>Dataset is too large to easily be downloaded and transferred to computing infrastructure that is not already co-located with the dataset.</li>
+        <li>Data provider is unable to store or host the dataset effectively due to insufficient storage space.</li>
+        <li>Dataset is not partitioned or searchable, requiring bulk download with significant computational resources.</li>
+      </ul>
+  </ul>
+  </p>
+
+  <p>
+  &#8227;<b>Type R: Reliability</b> - <i>Data needs to be improved, validated, and/or verified.</i>
+  <ul>
+    <li><b>R1: Quality</b> - <i>Data quality needs to be improved, validated, and/or verified.</i></li>
+      <ul>
+        <li>Data may contain significant errors or inaccuracies.</li>
+        <li>Data needs to be “ground truthed” or otherwise validated/verified.</li>
+      </ul>
+    <li><b>R2: Provenance</b> - <i>Data integrity needs to be validated/verified due to provenance.</i></li>
+      <ul>
+        <li>Data provenance is not properly documented (see also <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR Principles</a> R1.2 and <a href="https://arxiv.org/abs/1803.09010" target="_blank">Datasheets for Datasets</a>).</li>
+        <li>Integrity of data needs to be validated/verified by a trustworthy source due to provenance-related issues (e.g., data is self-reported or comes from an unverified source).</li>
+      </ul>
+  </ul>
+  </p>
+
+  <p>
+  &#8227;<b>Type S: Sufficiency</b> - <i>Data is insufficient and needs to be collected or simulated.</i>
+  <ul>
+    <li><b>S1: Insufficient Volume</b> - <i>Data volume is insufficient for intended tasks.</i></li>
+      <ul>
+        <li>Amount of data is insufficient for intended machine learning tasks.</li>
+      </ul>
+    <li><b>S2: Coverage</b> - <i>Data coverage is limited (e.g., geographically, temporally, or demographically).</i></li>
+      <ul>
+        <li>Data is only available for certain regions, time periods, demographic groups, etc., thereby limiting its usefulness.</li>
+      </ul>
+    <li><b>S3: Granularity</b> - <i>Data is lacking in granularity/resolution.</i></li>
+      <ul>
+        <li>More granular data is needed, e.g., with respect to spatial or temporal resolution.</li>
+      </ul>
+    <li><b>S4: Timeliness</b> - <i>Data is not released promptly or is otherwise out of date.</i></li>
+      <ul>
+        <li>Data is not released promptly or is otherwise out of date.</li>
+      </ul>
+    <li><b>S5: Proxy</b> - <i>Data needs to be inferred or simulated.</i></li>
+      <ul>
+        <li>Ground truth data is difficult or impossible to collect, and instead needs to be inferred or simulated.</li>
+      </ul>
+    <li><b>S6: Missing Components</b> - <i>Dataset is missing important variables or types of information.</i></li>
+      <ul>
+        <li>Dataset is missing additional variables or types of information that are important for downstream analysis (e.g., because this information has not yet been collected).</li>
+      </ul>
+  </ul>
+  </p>
+
+  <p>
+  &#8227;<b>Type M: Miscellaneous/Other</b> - <i>Challenges or gaps that do not fit into the other categories, including challenges that arise from the use of multiple datasets.</i>
+  </p>
+</div>
+
+      </div>
+    </section>
+  </body>
+</html>
