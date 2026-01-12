@@ -5,6 +5,9 @@
 * Install [Ruby](https://rubyinstaller.org/downloads/)
 * Run `gem install bundler`
 * Run `bundle install` (you may be missing some C libraries, try running `pacman -S mingw-w64-ucrt-x86_64-libxml2 mingw-w64-ucrt-x86_64-libxslt`)
+
+To update data and run:
+
 * Run `bundle exec ruby download_data_gaps_data.rb`
 * Run `bundle exec jekyll serve`
 * Visit <http://localhost:4000> and view your data
