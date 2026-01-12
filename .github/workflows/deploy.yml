@@ -1,39 +1,37 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy Static Site
 
 on:
   push:
     branches:
-      - main  # change if your default branch is different
+      - main # or your default branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4'  # match your local Ruby version
+          ruby-version: 3.4 
 
-      - name: Install dependencies
+      - name: Install gems
         run: |
           gem install bundler
-          bundle install || true  # in case you don't have a Gemfile
+          bundle install
 
-      - name: Run script to generate site
-        run: |
-          mkdir -p docs
-          ruby download_data_gaps_data.rb  # ensure your script outputs to docs/
+      - name: Set environment variables
+        run: echo "AIRTABLE_ACCESS_TOKEN=${{ secrets.AIRTABLE_ACCESS_TOKEN }}" >> $GITHUB_ENV
 
-      - name: Commit generated files
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
-          git commit -m "Automated site update" || echo "No changes to commit"
+      - name: Run data generation script
+        run: ruby download_data_gaps_data.rb # replace with your Ruby file
 
-      - name: Push to main
-        run: git push
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site # change this to your output folder
+
