@@ -18,8 +18,16 @@ jobs:
         with:
           ruby-version: 3.4
 
-      - name: Install build tools
-        run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev
+      - name: Install build tools & system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev \
+            libxml2-dev libxslt1-dev
+
+      - name: Set bundle config for Nokogiri
+        run: |
+          bundle config set force_ruby_platform false
+          bundle config set build.nokogiri --use-system-libraries
 
       - name: Install gems
         run: |
@@ -30,11 +38,10 @@ jobs:
         run: echo "AIRTABLE_ACCESS_TOKEN=${{ secrets.AIRTABLE_ACCESS_TOKEN }}" >> $GITHUB_ENV
 
       - name: Run data generation script
-        run: ruby download_data_gaps_data.rb # replace with your Ruby file
+        run: ruby download_data_gaps_data.rb
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site # change this to your output folder
-
+          publish_dir: ./_site
