@@ -1,24 +1,24 @@
 ---
 recAf0fpZFhEiJd1S:
   airtable_id: recAf0fpZFhEiJd1S
-  sectors:
-  - recUD3T8Vxf1E7wVs
-  publishable: true
+  name: Better Public Policy
   data_gaps:
   - recwnytP5YTfbdGcD
+  sectors:
+  - recUD3T8Vxf1E7wVs
+  id: better-public-policy
   introduction: "<p>A lot of our public policy isn’t based on good, reliable data.
     That should change.</p>"
-  name: Better Public Policy
-  id: better-public-policy
+  publishable: true
 rec9cpZ6HbUZ2slIP:
   airtable_id: rec9cpZ6HbUZ2slIP
+  name: Improving Legal Outcomes
+  data_gaps:
+  - recNvlKAHB96agZ50
   sectors:
   - rec8AGIw134PanOsZ
   - recUD3T8Vxf1E7wVs
-  publishable: true
-  data_gaps:
-  - recNvlKAHB96agZ50
+  id: improving-legal-outcomes
   introduction: "<p>Legal outcomes in the UK system could be improved. Filling data
     gaps would be helpful to improve it.</p>"
-  name: Improving Legal Outcomes
-  id: improving-legal-outcomes
+  publishable: true

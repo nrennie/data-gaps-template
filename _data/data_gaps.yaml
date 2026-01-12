@@ -1,40 +1,40 @@
 ---
 recNvlKAHB96agZ50:
   airtable_id: recNvlKAHB96agZ50
-  data_gap_details:
-  - recUBfs9lj5RO0STf
-  - recDDM1tP9umG2lL0
-  use_case:
-  - rec9cpZ6HbUZ2slIP
-  dataset:
-  - recPz0swayVMo9sTP
   summary: "<p>Unrepresented defendants can face harsher justice outcomes, are more
     likely to have negative court experiences and typically slow down hearings. Despite
     public interest in this data, no official data is published on unrepresented defendants.</p>"
-  usecaseid:
-  - improving-legal-outcomes
+  dataset:
+  - recPz0swayVMo9sTP
+  use_case:
+  - rec9cpZ6HbUZ2slIP
+  data_gap_details:
+  - recUBfs9lj5RO0STf
+  - recDDM1tP9umG2lL0
   datasetid:
   - unrepresented-defendants
+  usecaseid:
+  - improving-legal-outcomes
   id: improving-legal-outcomes-unrepresented-defendants
   alltypes:
   - S1
   - U2
 recwnytP5YTfbdGcD:
   airtable_id: recwnytP5YTfbdGcD
-  data_gap_details:
-  - recDYKODOz00nTHbs
-  use_case:
-  - recAf0fpZFhEiJd1S
-  dataset:
-  - recRqVr5AVjnpiPJh
   summary: "<p>We need better data on the UK’s gas boilers to help us achieve net
     zero and ensure landlords are keeping their tenants safe. The Government could
     achieve this by requiring gas safety certificates and boiler service reports to
     be registered centrally, just like energy performance certificates.</p>"
-  usecaseid:
-  - better-public-policy
+  dataset:
+  - recRqVr5AVjnpiPJh
+  use_case:
+  - recAf0fpZFhEiJd1S
+  data_gap_details:
+  - recDYKODOz00nTHbs
   datasetid:
   - boiler-data
+  usecaseid:
+  - better-public-policy
   id: better-public-policy-boiler-data
   alltypes:
   - 'W:'

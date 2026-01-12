@@ -1,8 +1,6 @@
 ---
 recDDM1tP9umG2lL0:
   airtable_id: recDDM1tP9umG2lL0
-  details: "<p>Data on unrepresented defendants, where it exists, isn’t standardized.
-    It’s really hard to compare attributes and outcomes across location.</p>"
   datagapid:
   - recNvlKAHB96agZ50
   type:
@@ -14,16 +12,14 @@ recDDM1tP9umG2lL0:
   - recPz0swayVMo9sTP
   use_case_(from_data_gaps):
   - rec9cpZ6HbUZ2slIP
+  details: "<p>Data on unrepresented defendants, where it exists, isn’t standardized.
+    It’s really hard to compare attributes and outcomes across location.</p>"
   use_case_(from_datagapid):
   - rec9cpZ6HbUZ2slIP
   dataset_(from_datagapid):
   - recPz0swayVMo9sTP
 recDYKODOz00nTHbs:
   airtable_id: recDYKODOz00nTHbs
-  details: <p>We don’t know which homes have the oldest, most polluting boilers. So
-    it’s much harder for the government to target incentives at the homeowners most
-    in need. Previous incentive schemes have a <a target="_blank" href="https://www.nao.org.uk/press-releases/green-homes-grant/">woeful
-    track record</a>.</p>
   datagapid:
   - recwnytP5YTfbdGcD
   type:
@@ -35,14 +31,16 @@ recDYKODOz00nTHbs:
   - recRqVr5AVjnpiPJh
   use_case_(from_data_gaps):
   - recAf0fpZFhEiJd1S
+  details: <p>We don’t know which homes have the oldest, most polluting boilers. So
+    it’s much harder for the government to target incentives at the homeowners most
+    in need. Previous incentive schemes have a <a target="_blank" href="https://www.nao.org.uk/press-releases/green-homes-grant/">woeful
+    track record</a>.</p>
   use_case_(from_datagapid):
   - recAf0fpZFhEiJd1S
   dataset_(from_datagapid):
   - recRqVr5AVjnpiPJh
 recUBfs9lj5RO0STf:
   airtable_id: recUBfs9lj5RO0STf
-  details: "<p>There isn’t enough data on unrepresented defendants. This represents
-    a <strong>big problem</strong> for improving legal outcomes.</p>"
   datagapid:
   - recNvlKAHB96agZ50
   type:
@@ -54,6 +52,8 @@ recUBfs9lj5RO0STf:
   - recPz0swayVMo9sTP
   use_case_(from_data_gaps):
   - rec9cpZ6HbUZ2slIP
+  details: "<p>There isn’t enough data on unrepresented defendants. This represents
+    a <strong>big problem</strong> for improving legal outcomes.</p>"
   use_case_(from_datagapid):
   - rec9cpZ6HbUZ2slIP
   dataset_(from_datagapid):
