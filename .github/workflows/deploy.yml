@@ -30,7 +30,7 @@ jobs:
         run: ruby download_data_gaps_data.rb # replace with your Ruby file
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site # change this to your output folder
