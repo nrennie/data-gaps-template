@@ -1,9 +1,9 @@
-name: Deploy Static Site
+name: Build and Deploy Site
 
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -39,6 +39,9 @@ jobs:
 
       - name: Run data generation script
         run: ruby download_data_gaps_data.rb
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
