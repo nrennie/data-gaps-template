@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Gaps Demo</title>
+    <title>Poverty Data Gaps</title>
 
     <!-- CSS Framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
@@ -34,7 +34,7 @@
 
 <div class='content'>
   <p>
-  <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank" class='button is-info'>New Data Gap</a>
+  <a href="https://airtable.com/appCGMtdXOaqhWh4y/pagmTyuvNXMeVZMMS/form" target="_blank" class='button is-info'>New Data Gap</a>
   </p>
 </div>
 
@@ -50,7 +50,7 @@
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Data Gap Types</label>
+        <label class='label'>Type of Gap</label>
         <div class='control is-expanded'>
           <select multiple id='gap-types'></select>
         </div>
@@ -58,17 +58,17 @@
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Data Modalities</label>
+        <label class='label'>Data Source</label>
         <div class='control is-expanded'>
-          <select multiple id='modalities'></select>
+          <select multiple id='sources'></select>
         </div>
       </div>
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Sectors</label>
+        <label class='label'>Topic</label>
         <div class='control is-expanded'>
-          <select multiple id='sectors'></select>
+          <select multiple id='topics'></select>
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
       <thead>
         <th>Use Case</th>
         <th>Gap Types</th>
-        <th>Sectors</th>
+        <th>topics</th>
       </thead>
       <tbody>
         
@@ -110,7 +110,7 @@
           <tr
             id='better-public-policy'
             class='data-gaps-details use-case-row'
-            data-sectors='["recUD3T8Vxf1E7wVs"]'
+            data-topics='null'
           >
             <td>
               Better Public Policy
@@ -137,7 +137,7 @@
                         class='data-gap-row'
                         data-types='["W:"]'
                         data-existence='Wish'
-                        data-modalities='["Timeseries","Tabular","Text"]'
+                        data-sources='["Other","CHAIN"]'
                       >
                         <td><a class='view-data-gap' href='javascript:void(0)' data-gap='better-public-policy-boiler-data'>Boiler Data</a></td>
                         <td>
@@ -150,7 +150,7 @@
   More details
 </button>
 
-<a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
+<a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
   Give feedback
 </a>
 
@@ -193,7 +193,7 @@
     </section>
     <footer class='modal-card-foot'>
       <div class="buttons">
-        <a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
+        <a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
           Give feedback
         </a>
 
@@ -213,7 +213,7 @@
               <div class='types'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         
@@ -225,7 +225,7 @@
           <tr
             id='improving-legal-outcomes'
             class='data-gaps-details use-case-row'
-            data-sectors='["rec8AGIw134PanOsZ","recUD3T8Vxf1E7wVs"]'
+            data-topics='null'
           >
             <td>
               Improving Legal Outcomes
@@ -252,7 +252,7 @@
                         class='data-gap-row'
                         data-types='["S1","U2"]'
                         data-existence='Existing'
-                        data-modalities='["Tabular"]'
+                        data-sources='["CHAIN"]'
                       >
                         <td><a class='view-data-gap' href='javascript:void(0)' data-gap='improving-legal-outcomes-unrepresented-defendants'>Unrepresented Defendants</a></td>
                         <td>
@@ -265,7 +265,7 @@
   More details
 </button>
 
-<a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
+<a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
   Give feedback
 </a>
 
@@ -316,7 +316,7 @@
     </section>
     <footer class='modal-card-foot'>
       <div class="buttons">
-        <a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
+        <a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
           Give feedback
         </a>
 
@@ -336,7 +336,7 @@
               <div class='types'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         
@@ -344,7 +344,7 @@
     </table>
 
     <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
+      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appCGMtdXOaqhWh4y/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
     </div>
   </div>
 
@@ -356,8 +356,8 @@
       <thead>
         <th>Dataset</th>
         <th>Gap Types</th>
-        <th>Modalities</th>
-        <th>Sectors</th>
+        <th>sources</th>
+        <th>topics</th>
       </thead>
       <tbody>
         
@@ -369,9 +369,9 @@
           <tr
             id='boiler-data'
             class='data-gaps-details dataset-row'
-            data-sectors='["recoCHzI27qe9Xzd9"]'
+            data-topics='["recoCHzI27qe9Xzd9"]'
             data-existence='Wish'
-            data-modalities='["Timeseries","Tabular","Text"]'
+            data-sources='["Other","CHAIN"]'
           >
             <td>
               Boiler Data
@@ -415,7 +415,7 @@
   More details
 </button>
 
-<a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
+<a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
   Give feedback
 </a>
 
@@ -458,7 +458,7 @@
     </section>
     <footer class='modal-card-foot'>
       <div class="buttons">
-        <a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
+        <a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=better-public-policy-boiler-data' target='_blank'>
           Give feedback
         </a>
 
@@ -477,10 +477,10 @@
               <div class='types'></div>
             </td>
             <td>
-              <div class='modalities'></div>
+              <div class='sources'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         
@@ -492,9 +492,9 @@
           <tr
             id='unrepresented-defendants'
             class='data-gaps-details dataset-row'
-            data-sectors='["rec8AGIw134PanOsZ"]'
+            data-topics='["rec8AGIw134PanOsZ"]'
             data-existence='Existing'
-            data-modalities='["Tabular"]'
+            data-sources='["CHAIN"]'
           >
             <td>
               Unrepresented Defendants
@@ -540,7 +540,7 @@
   More details
 </button>
 
-<a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
+<a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
   Give feedback
 </a>
 
@@ -591,7 +591,7 @@
     </section>
     <footer class='modal-card-foot'>
       <div class="buttons">
-        <a class='button is-info' href='https://airtable.com/appY2hJvi0WWoFOPx/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
+        <a class='button is-info' href='https://airtable.com/appCGMtdXOaqhWh4y/pagBcFCIqhKBjQLW6/form?prefill_Data+Gap=improving-legal-outcomes-unrepresented-defendants' target='_blank'>
           Give feedback
         </a>
 
@@ -610,10 +610,10 @@
               <div class='types'></div>
             </td>
             <td>
-              <div class='modalities'></div>
+              <div class='sources'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         
@@ -621,7 +621,7 @@
     </table>
 
     <div class='no-records' style='display: none'>
-      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appY2hJvi0WWoFOPx/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
+      <p>No records found! Try <a href='javascript:void(0)' class='clear-filters'>clearing filters</a>, or <a href="https://airtable.com/appCGMtdXOaqhWh4y/pagmTyuvNXMeVZMMS/form" target="_blank">contribute a new data gap</a>.</p>
     </div>
   </div>
 </div>
@@ -735,17 +735,17 @@
 </style>
 
 <script>
-  const sectors = {"recoCHzI27qe9Xzd9":{"airtable_id":"recoCHzI27qe9Xzd9","name":"Energy","associated_datasets":["recRqVr5AVjnpiPJh"],"icon":"🔌"},"rec8AGIw134PanOsZ":{"airtable_id":"rec8AGIw134PanOsZ","name":"Legal System","associated_use_cases":["rec9cpZ6HbUZ2slIP"],"associated_datasets":["recPz0swayVMo9sTP"],"icon":"👩‍⚖️"},"recUD3T8Vxf1E7wVs":{"airtable_id":"recUD3T8Vxf1E7wVs","name":"Public Policy","associated_use_cases":["rec9cpZ6HbUZ2slIP","recAf0fpZFhEiJd1S"],"icon":"👥"}};
-  const modalities = {"rectsnaFBdP7KtICO":{"airtable_id":"rectsnaFBdP7KtICO","name":"Audio","icon":"🔊"},"rec68iaSQwefsAZ2E":{"airtable_id":"rec68iaSQwefsAZ2E","name":"Geospatial Numeric","icon":"🌐"},"recuIsqzfrkhbBwvR":{"airtable_id":"recuIsqzfrkhbBwvR","name":"Image","icon":"🖼️"},"recYFzMXUXPSEEwyI":{"airtable_id":"recYFzMXUXPSEEwyI","name":"Other","icon":"➕"},"recUHDKdbh7C2yU2C":{"airtable_id":"recUHDKdbh7C2yU2C","name":"Satellite","icon":"🛰️"},"recozsT3bzD85yneh":{"airtable_id":"recozsT3bzD85yneh","name":"Simulation","icon":"⚙️"},"recX5jk6gMljKxqPI":{"airtable_id":"recX5jk6gMljKxqPI","name":"Tabular","icon":"📊"},"recZQegbA9QiQnYmz":{"airtable_id":"recZQegbA9QiQnYmz","name":"Text","icon":"📝"},"recdkhdDqTng8Tque":{"airtable_id":"recdkhdDqTng8Tque","name":"Timeseries","icon":"📈"},"recoq1Dre8v9iMOm7":{"airtable_id":"recoq1Dre8v9iMOm7","name":"Vector","icon":"↗️"},"rec581Yvn7lryUKTR":{"airtable_id":"rec581Yvn7lryUKTR","name":"Video","icon":"🎥"}};
+  const topics = {"recov84EGgJzoCqNj":{"airtable_id":"recov84EGgJzoCqNj","name":"Administrative data on TA"},"recuHZtT1NWH6uNY8":{"airtable_id":"recuHZtT1NWH6uNY8","name":"Analysis of Census data"},"recwTabSc2G7sMe2o":{"airtable_id":"recwTabSc2G7sMe2o","name":"Benefit caps and housing affordability"},"recCeEhTNfbOt1VKq":{"airtable_id":"recCeEhTNfbOt1VKq","name":"Benefit income"},"rec0ojI8XuYPWWwKC":{"airtable_id":"rec0ojI8XuYPWWwKC","name":"Benefit take-up"},"recnA5Qjb8wGZxn18":{"airtable_id":"recnA5Qjb8wGZxn18","name":"Benefits deductions and sanctions"},"recNtz9DF9UdxGwYG":{"airtable_id":"recNtz9DF9UdxGwYG","name":"Benefits uptake"},"rec8SzfRLp4h0qAou":{"airtable_id":"rec8SzfRLp4h0qAou","name":"Child deprivation measurement"},"recxEnW0C0235l5Xn":{"airtable_id":"recxEnW0C0235l5Xn","name":"Child poverty"},"recpkZ1KKUFJhTcqu":{"airtable_id":"recpkZ1KKUFJhTcqu","name":"Child poverty\n\nEthnicity"},"recVYhULOgEFd5ZQB":{"airtable_id":"recVYhULOgEFd5ZQB","name":"Child poverty\n\nFree school meals"},"recpNhaJIbATxCgyR":{"airtable_id":"recpNhaJIbATxCgyR","name":"Child poverty\n\nMigration"},"rec2HQn9YWaQRIwmu":{"airtable_id":"rec2HQn9YWaQRIwmu","name":"Child poverty\n\nMigration\n\nNRPF"},"recfyC4VdEl3eSiLN":{"airtable_id":"recfyC4VdEl3eSiLN","name":"Child poverty & ethnicity"},"recVo2ZPCbf6RpNtZ":{"airtable_id":"recVo2ZPCbf6RpNtZ","name":"Child poverty / intra-household inequality"},"rec7GkupJXXT2JoJa":{"airtable_id":"rec7GkupJXXT2JoJa","name":"Cost of living"},"rec9Wf0XJkgYhYqpA":{"airtable_id":"rec9Wf0XJkgYhYqpA","name":"Council Tax Reduction"},"recvivWNoRfbAFz3l":{"airtable_id":"recvivWNoRfbAFz3l","name":"Data sharing"},"recPvV6bGmzwXWkGs":{"airtable_id":"recPvV6bGmzwXWkGs","name":"Deep poverty"},"recYpsPnylmpGhOaS":{"airtable_id":"recYpsPnylmpGhOaS","name":"Deprivation"},"reczzlAwSZsPdhNL9":{"airtable_id":"reczzlAwSZsPdhNL9","name":"Disability"},"recaNRa3temuWcF9u":{"airtable_id":"recaNRa3temuWcF9u","name":"Disability & poverty"},"recC5nM0yl5XdsEws":{"airtable_id":"recC5nM0yl5XdsEws","name":"Early identification of homelessness risk"},"rec0hQNDng38nNdTr":{"airtable_id":"rec0hQNDng38nNdTr","name":"Early-years service integration"},"recqt1lB2xBSnFoRA":{"airtable_id":"recqt1lB2xBSnFoRA","name":"Economic inactivity"},"recw7nmUbyQzgTwQa":{"airtable_id":"recw7nmUbyQzgTwQa","name":"Economic inactivity statistics"},"recbzj18RKzD7cq3p":{"airtable_id":"recbzj18RKzD7cq3p","name":"Economic security"},"recu8wurk95vDlQMg":{"airtable_id":"recu8wurk95vDlQMg","name":"Education – Longitudinal poverty data"},"recAYMh0Kw8C8TTYO":{"airtable_id":"recAYMh0Kw8C8TTYO","name":"Education – Pupil Premium expenditure"},"recAK0hbZ7A8yiBIr":{"airtable_id":"recAK0hbZ7A8yiBIr","name":"Employment statistics"},"recbiTH9wajnQj3PC":{"airtable_id":"recbiTH9wajnQj3PC","name":"Employment status of homeless households"},"recqxBG3xtjzOHxiO":{"airtable_id":"recqxBG3xtjzOHxiO","name":"Employmente"},"recoCHzI27qe9Xzd9":{"airtable_id":"recoCHzI27qe9Xzd9","name":"Energy","associated_datasets":["recRqVr5AVjnpiPJh"],"icon":"🔌"},"rec0PbF2VPiJlPGku":{"airtable_id":"rec0PbF2VPiJlPGku","name":"Energy poverty\n\nSocial security"},"recJfmRm3ffS9nl8y":{"airtable_id":"recJfmRm3ffS9nl8y","name":"Ethnicity & poverty"},"recvbo2LO8HlGlL1b":{"airtable_id":"recvbo2LO8HlGlL1b","name":"Ethnicity and poverty statistics"},"rec8puPqNgM3UW9au":{"airtable_id":"rec8puPqNgM3UW9au","name":"Ethnicity granularity"},"recIwsn3CAspqExwt":{"airtable_id":"recIwsn3CAspqExwt","name":"Family-structure data"},"recCaaCmCTkBOuCjS":{"airtable_id":"recCaaCmCTkBOuCjS","name":"Fiscal multipliers; Fiscal policy projections"},"recjVIitKK73VEigg":{"airtable_id":"recjVIitKK73VEigg","name":"Food banks"},"rec9UgPEDbTY0HfyR":{"airtable_id":"rec9UgPEDbTY0HfyR","name":"Fuel poverty"},"recNeh337pEpc8kvY":{"airtable_id":"recNeh337pEpc8kvY","name":"Gender & childcare"},"recLhAOwWYKJUeY7x":{"airtable_id":"recLhAOwWYKJUeY7x","name":"Geographical analysis of poverty and economics"},"recOt83fV08fLx5tJ":{"airtable_id":"recOt83fV08fLx5tJ","name":"Homelessness"},"recfSnA4NmskMbY50":{"airtable_id":"recfSnA4NmskMbY50","name":"Homelessness\n\nDisability"},"recgg4lGffRYOv10v":{"airtable_id":"recgg4lGffRYOv10v","name":"Homelessness & rough sleeping"},"rec6bKqJYHJgDbzF9":{"airtable_id":"rec6bKqJYHJgDbzF9","name":"Homelessness (Care-leavers)"},"reczp6SoOVMzI1tWz":{"airtable_id":"reczp6SoOVMzI1tWz","name":"Homelessness (referalls)"},"rec1AwIzlnUBSu8Jb":{"airtable_id":"rec1AwIzlnUBSu8Jb","name":"Homelessness / Causes of homelessness"},"rec24H9G6rU0kRkD2":{"airtable_id":"rec24H9G6rU0kRkD2","name":"Homelessness / Temporary accommodation"},"reclkqeQ0Fhlp5vRI":{"airtable_id":"reclkqeQ0Fhlp5vRI","name":"Homelessness and other services"},"recDuq5HywOdN4Tfs":{"airtable_id":"recDuq5HywOdN4Tfs","name":"Homelessness prevention"},"recCmGdnXdHknCpGY":{"airtable_id":"recCmGdnXdHknCpGY","name":"Homelessness – Hidden Homelessness"},"recdKG6TAJD9AubRh":{"airtable_id":"recdKG6TAJD9AubRh","name":"Homelessness – Rough Sleeping"},"recKh5JAs2NeOMTgB":{"airtable_id":"recKh5JAs2NeOMTgB","name":"Homelessness – temporary accommodation"},"rec0w60aTOhJ3SKXQ":{"airtable_id":"rec0w60aTOhJ3SKXQ","name":"Homelessness-intervention evaluation"},"recPCnLNdMFsdBiEu":{"airtable_id":"recPCnLNdMFsdBiEu","name":"Housing & poverty"},"recUqmt3lLSGBaZFP":{"airtable_id":"recUqmt3lLSGBaZFP","name":"Housing Benefit – Temporary Accommodation"},"recauveCIPOqFXgcJ":{"airtable_id":"recauveCIPOqFXgcJ","name":"Housing affordability and benefits"},"recd4QRMpJEQMkYP6":{"airtable_id":"recd4QRMpJEQMkYP6","name":"Housing – LHA"},"rec24NaX324mdqtry":{"airtable_id":"rec24NaX324mdqtry","name":"Immigration status; Asylum Seekers"},"reciTh4wot5yQWeWw":{"airtable_id":"reciTh4wot5yQWeWw","name":"Income and Earnings"},"recKDjJ1PgCJyC3uh":{"airtable_id":"recKDjJ1PgCJyC3uh","name":"Income distribution"},"recEk5nGv5BTjV6yS":{"airtable_id":"recEk5nGv5BTjV6yS","name":"Income growth"},"reclNk7wKjNpE5bkw":{"airtable_id":"reclNk7wKjNpE5bkw","name":"Income levels"},"recYkAmTfiuilAM4n":{"airtable_id":"recYkAmTfiuilAM4n","name":"Income measurement"},"recayDQhJAO9NMNub":{"airtable_id":"recayDQhJAO9NMNub","name":"Income measurement\n\nPoverty"},"recje8CAh4g2uZAox":{"airtable_id":"recje8CAh4g2uZAox","name":"Job classifications"},"recDpcNF8aq8324JZ":{"airtable_id":"recDpcNF8aq8324JZ","name":"Labour market"},"rec8AGIw134PanOsZ":{"airtable_id":"rec8AGIw134PanOsZ","name":"Legal System","associated_use_cases":["rec9cpZ6HbUZ2slIP"],"associated_datasets":["recPz0swayVMo9sTP"],"icon":"👩‍⚖️"},"recFjg7DxRcFibEQX":{"airtable_id":"recFjg7DxRcFibEQX","name":"Living standards measurement"},"recvN74EimiE4fhsT":{"airtable_id":"recvN74EimiE4fhsT","name":"Local Welfare Assistance"},"rechPlUrpQE3Ob7Af":{"airtable_id":"rechPlUrpQE3Ob7Af","name":"Local area analysis"},"recVIl3GVtDD9RAR6":{"airtable_id":"recVIl3GVtDD9RAR6","name":"Local authority child home visits data"},"recA5lICkiMtMt1Sp":{"airtable_id":"recA5lICkiMtMt1Sp","name":"Long-term poverty impacts – earnings"},"recFN8EoAA5nyM3Ts":{"airtable_id":"recFN8EoAA5nyM3Ts","name":"Material deprivation"},"recj1pqlgONUUzwf0":{"airtable_id":"recj1pqlgONUUzwf0","name":"Measuring incomes"},"recr4Dz81aMf4e4k5":{"airtable_id":"recr4Dz81aMf4e4k5","name":"Mental-health data"},"recYcqxk3Q8Ry0Ozh":{"airtable_id":"recYcqxk3Q8Ry0Ozh","name":"Minimum Income Standards"},"recd11PM3jn9o6N1U":{"airtable_id":"recd11PM3jn9o6N1U","name":"Multiple deprivation?\n\nDevolved services"},"recJUp5BUTLazhRBw":{"airtable_id":"recJUp5BUTLazhRBw","name":"Pensioner poverty\n\nWelfare and social security"},"reckWdbIZCm1Q51iU":{"airtable_id":"reckWdbIZCm1Q51iU","name":"Persistent and deep poverty"},"reca55v4hPDetoD2y":{"airtable_id":"reca55v4hPDetoD2y","name":"Policy impact analysis"},"rectsQxGfP0qOEpha":{"airtable_id":"rectsQxGfP0qOEpha","name":"Poverty\n\nIntra-household dynamics"},"recOlGGCGUJDDehx2":{"airtable_id":"recOlGGCGUJDDehx2","name":"Poverty Premium"},"reccxuCwNliDgWqDh":{"airtable_id":"reccxuCwNliDgWqDh","name":"Poverty Premium\n\nCost of living\n\nInsurance"},"recytMddVBReyhETd":{"airtable_id":"recytMddVBReyhETd","name":"Poverty and educaiton"},"recnTzj9iuZn67LRq":{"airtable_id":"recnTzj9iuZn67LRq","name":"Poverty and education"},"recUK03bNpVXmoJFE":{"airtable_id":"recUK03bNpVXmoJFE","name":"Poverty and gender"},"reclnpfh4AZp6cmVF":{"airtable_id":"reclnpfh4AZp6cmVF","name":"Poverty and protected characteristics"},"recCiF4bzVSv8Jv7x":{"airtable_id":"recCiF4bzVSv8Jv7x","name":"Poverty by geography"},"reccsB2gvkMVPdadQ":{"airtable_id":"reccsB2gvkMVPdadQ","name":"Poverty depth and transitions"},"recgnYkYneqalUEGS":{"airtable_id":"recgnYkYneqalUEGS","name":"Poverty in Wales"},"recQThGlcO5rgpL1j":{"airtable_id":"recQThGlcO5rgpL1j","name":"Poverty measurement"},"recPYN9SqBCKo0NUu":{"airtable_id":"recPYN9SqBCKo0NUu","name":"Poverty premium"},"recxgyRmniftIQn8Y":{"airtable_id":"recxgyRmniftIQn8Y","name":"Poverty premium\n\nCar insurance\n\nCost of living"},"recA7OCHY9EDVqFyd":{"airtable_id":"recA7OCHY9EDVqFyd","name":"Poverty premium\n\nCost of living"},"rec0dfnSeExATLNG5":{"airtable_id":"rec0dfnSeExATLNG5","name":"Poverty rates"},"recLjWeUQrdxP9S8m":{"airtable_id":"recLjWeUQrdxP9S8m","name":"Poverty rates\n\nDisability"},"recH7HACvWU7XPIu0":{"airtable_id":"recH7HACvWU7XPIu0","name":"Preventative vs reactive spending effectiveness"},"recUD3T8Vxf1E7wVs":{"airtable_id":"recUD3T8Vxf1E7wVs","name":"Public Policy","associated_use_cases":["rec9cpZ6HbUZ2slIP","recAf0fpZFhEiJd1S"],"icon":"👥"},"recZRlQMInK8CH7m2":{"airtable_id":"recZRlQMInK8CH7m2","name":"Religion\n\nEthnicity"},"rec7rmD2V7r6igogi":{"airtable_id":"rec7rmD2V7r6igogi","name":"Rough sleeping"},"recu1VMhK8gk1Wj7D":{"airtable_id":"recu1VMhK8gk1Wj7D","name":"Routes out of poverty\n\nParental education data"},"recOzfKSXYXz8jf71":{"airtable_id":"recOzfKSXYXz8jf71","name":"Secondary employment"},"rectB39nqCfZ03pl0":{"airtable_id":"rectB39nqCfZ03pl0","name":"Social policy"},"rec30mJCNTej2cyRC":{"airtable_id":"rec30mJCNTej2cyRC","name":"Social security\n\nEthnicity data"},"recSC4y0sghBv7qzO":{"airtable_id":"recSC4y0sghBv7qzO","name":"Social security & income support"},"recs9POZikEIq1iXM":{"airtable_id":"recs9POZikEIq1iXM","name":"Social tariffs (water affordability)"},"recBYFv4opZp5ftOz":{"airtable_id":"recBYFv4opZp5ftOz","name":"Social tariffs (water)"},"recwbgwxp7zwHG8rT":{"airtable_id":"recwbgwxp7zwHG8rT","name":"Student homelessness"},"recoDD6bILAQDgs4V":{"airtable_id":"recoDD6bILAQDgs4V","name":"Sub-national poverty statistics"},"recph2YfVZnPulkJV":{"airtable_id":"recph2YfVZnPulkJV","name":"TA costs"},"reccG0nltlVCiCVXe":{"airtable_id":"reccG0nltlVCiCVXe","name":"UC claimant characteristics"},"rec02MUg3xWvQ1HH9":{"airtable_id":"rec02MUg3xWvQ1HH9","name":"Universal Credit – Housing element"},"recbg2wWmgYGHkZQ1":{"airtable_id":"recbg2wWmgYGHkZQ1","name":"Unpaid care"},"rec2ig8lHJazk61g0":{"airtable_id":"rec2ig8lHJazk61g0","name":"Very-low incomes"},"reczwtmXyX66oCit9":{"airtable_id":"reczwtmXyX66oCit9","name":"Wealth and assets"},"recGPcr9izV4K8XUD":{"airtable_id":"recGPcr9izV4K8XUD","name":"Welfare and social security"},"rec2lrEPM5NYDh61d":{"airtable_id":"rec2lrEPM5NYDh61d","name":"Wellbeing"}};
+  const sources = {"recBqegWCNBnjs0Fi":{"airtable_id":"recBqegWCNBnjs0Fi","name":"CHAIN","icon":"🔊"},"recDm2UasvtUTboTc":{"airtable_id":"recDm2UasvtUTboTc","name":"Census data"},"recLouXPy9DE4A880":{"airtable_id":"recLouXPy9DE4A880","name":"DLUHC admin data"},"recD98SBFdiIh3hiw":{"airtable_id":"recD98SBFdiIh3hiw","name":"DWP admin data"},"recZSy8fRVxGlLHw5":{"airtable_id":"recZSy8fRVxGlLHw5","name":"Devolved data"},"recAA19N29mZmq2A7":{"airtable_id":"recAA19N29mZmq2A7","name":"EU-SILC"},"recn4qUJ8EplHv8yK":{"airtable_id":"recn4qUJ8EplHv8yK","name":"FRS / HBAI"},"recNDsEAEhqp15kQQ":{"airtable_id":"recNDsEAEhqp15kQQ","name":"Home Office admin data"},"recm9HXgzplFjlfzy":{"airtable_id":"recm9HXgzplFjlfzy","name":"Indices of Multiple Deprivation"},"rec4Tgtsg505fjO49":{"airtable_id":"rec4Tgtsg505fjO49","name":"LFS"},"rec9xSGFeZHzGpNW7":{"airtable_id":"rec9xSGFeZHzGpNW7","name":"Minimum Income Standards"},"recTSxGp4lDjU6idi":{"airtable_id":"recTSxGp4lDjU6idi","name":"National Pupil Database"},"recje15uTcYblXAqk":{"airtable_id":"recje15uTcYblXAqk","name":"National Student Survey"},"recdP3lyzEWlpj2sQ":{"airtable_id":"recdP3lyzEWlpj2sQ","name":"Non-existent"},"recM6REs3eSCpBuCt":{"airtable_id":"recM6REs3eSCpBuCt","name":"Not stated"},"recYFzMXUXPSEEwyI":{"airtable_id":"recYFzMXUXPSEEwyI","name":"Other","icon":"➕"},"receAykMlfOI9vSK0":{"airtable_id":"receAykMlfOI9vSK0","name":"Understanding Society"},"recgP1qPz4GW4BGsU":{"airtable_id":"recgP1qPz4GW4BGsU","name":"Universal Credit Data Share"},"rec9B7QotS2ugTlVx":{"airtable_id":"rec9B7QotS2ugTlVx","name":"Unspecified admin data"},"recGw0LObBIMVE5YL":{"airtable_id":"recGw0LObBIMVE5YL","name":"Wealth and Assets Survey"}};
 
   const sectorIcons = {};
-  Object.entries(sectors).forEach(iter => {
+  Object.entries(topics).forEach(iter => {
     const [sectorId, sector] = iter;
     sectorIcons[sectorId] = sector.icon;
   });
 
   const modalityIcons = {};
-  Object.entries(modalities).forEach(iter => {
+  Object.entries(sources).forEach(iter => {
     const [modalityId, modality] = iter;
      modalityIcons[modality.name] = modality.icon;
   });
@@ -793,15 +793,15 @@
     };
 
     const details = Array.from(document.getElementsByClassName('data-gaps-details'));
-    const allSectors = new Set();
+    const alltopics = new Set();
 
     details.forEach(el => {
       const rowTypes = new Set();
 
-      ($(el).data('sectors') || []).forEach(sector => {
-        allSectors.add(sector);
-        $(el).find('.sectors').append(`
-           <a class='tag is-light is-icon-tag' data-sectors='${sector}' href='javascript:void(0)' title='${sectors[sector].name}'>${sectors[sector].icon}</a>
+      ($(el).data('topics') || []).forEach(sector => {
+        alltopics.add(sector);
+        $(el).find('.topics').append(`
+           <a class='tag is-light is-icon-tag' data-topics='${sector}' href='javascript:void(0)' title='${topics[sector].name}'>${topics[sector].icon}</a>
         `);
       });
 
@@ -813,8 +813,8 @@
       $(el).attr('data-types', JSON.stringify(sortedVals(rowTypes)));
     });
 
-    sortedVals(allSectors).forEach(sectorId => {
-      $("#sectors").append(`<option value='${sectorId}'>${sectorIcons[sectorId]} ${sectors[sectorId].name}</option>`);
+    sortedVals(alltopics).forEach(sectorId => {
+      $("#topics").append(`<option value='${sectorId}'>${sectorIcons[sectorId]} ${topics[sectorId].name}</option>`);
     });
 
     const typeIdsToNames = {};
@@ -859,16 +859,16 @@
 
     const allModes = new Set();
     Array.from($('.dataset-row')).forEach(el => {
-      ($(el).data('modalities') || []).forEach(modality => {
+      ($(el).data('sources') || []).forEach(modality => {
         allModes.add(modality);
-        $(el).find('.modalities').append(`
-            <a class='tag is-light is-icon-tag' data-modalities='${modality}' href='javascript:void(0)' title='${modality}'>${modalityIcons[modality]}</a>
+        $(el).find('.sources').append(`
+            <a class='tag is-light is-icon-tag' data-sources='${modality}' href='javascript:void(0)' title='${modality}'>${modalityIcons[modality]}</a>
         `);
       });
     });
 
     sortedVals(allModes).forEach(modality => {
-      $("#modalities").append(`<option value='${modality}'>${modalityIcons[modality]} ${modality}</option>`);
+      $("#sources").append(`<option value='${modality}'>${modalityIcons[modality]} ${modality}</option>`);
     });
 
     $("#search-wrapper select").chosen({ width: '100%' });
@@ -889,9 +889,9 @@
     const filterRows = () => {
       const textSearch = $('#text-search').val();
       prepareMark(textSearch);
-      const selectedSects = new Set(Array.from($("#sectors").val()));
+      const selectedSects = new Set(Array.from($("#topics").val()));
       const selectedTypes = new Set(Array.from($("#gap-types").val()));
-      const selectedModes = new Set(Array.from($("#modalities").val()));
+      const selectedModes = new Set(Array.from($("#sources").val()));
       const filterSets = [selectedSects, selectedTypes, selectedModes];
 
       $(".filterable-table").show();
@@ -925,7 +925,7 @@
       }
 
       const matchesFilters = (el) => {
-        if (!matchesAll(selectedSects, $(el).data('sectors'))) return false;
+        if (!matchesAll(selectedSects, $(el).data('topics'))) return false;
 
         if (textSearch) {
           const elText = $(el).clone().remove('.modal').text().toLowerCase();
@@ -950,9 +950,9 @@
         if (!checkGaps(selectedTypes, 'types')) return false;
 
         if ($(el).hasClass('dataset-row')) {
-          if (!matchesAll(selectedModes, $(el).data('modalities'))) return false;
+          if (!matchesAll(selectedModes, $(el).data('sources'))) return false;
         } else {
-          if (!checkGaps(selectedModes, 'modalities')) return false;
+          if (!checkGaps(selectedModes, 'sources')) return false;
         }
 
         return true;
