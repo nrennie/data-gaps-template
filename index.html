@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Gaps
+title: Poverty Data Gaps
 ---
 
 <h1 class='title'>Poverty Data Gaps</h1>
@@ -27,7 +27,7 @@ title: Data Gaps
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Data Gap Types</label>
+        <label class='label'>Type of Gap</label>
         <div class='control is-expanded'>
           <select multiple id='gap-types'></select>
         </div>
@@ -35,17 +35,17 @@ title: Data Gaps
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Data Modalities</label>
+        <label class='label'>Data Source</label>
         <div class='control is-expanded'>
-          <select multiple id='modalities'></select>
+          <select multiple id='sources'></select>
         </div>
       </div>
     </div>
     <div class='column'>
       <div class='field'>
-        <label class='label'>Sectors</label>
+        <label class='label'>Topic</label>
         <div class='control is-expanded'>
-          <select multiple id='sectors'></select>
+          <select multiple id='topics'></select>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ title: Data Gaps
       <thead>
         <th>Use Case</th>
         <th>Gap Types</th>
-        <th>Sectors</th>
+        <th>topics</th>
       </thead>
       <tbody>
         {% for uc in site.data.data_gaps_use_cases %}
@@ -89,7 +89,7 @@ title: Data Gaps
           <tr
             id='{{ use_case.id }}'
             class='data-gaps-details use-case-row'
-            data-sectors='{{ use_case.sectors | jsonify }}'
+            data-topics='{{ use_case.topics | jsonify }}'
           >
             <td>
               {{ use_case.name }}
@@ -118,7 +118,7 @@ title: Data Gaps
                         class='data-gap-row'
                         data-types='{{ data_gap.alltypes | jsonify }}'
                         data-existence='{{ dataset.existence }}'
-                        data-modalities='{{ dataset.modalities | jsonify }}'
+                        data-sources='{{ dataset.sources | jsonify }}'
                       >
                         <td><a class='view-data-gap' href='javascript:void(0)' data-gap='{{ data_gap.id }}'>{{ dataset.name }}</a></td>
                         <td>{% include data_gap_details.html data_gap=data_gap fallback_summary=dataset.introduction dataset=dataset use_case=use_case first="use_case" %}</td>
@@ -132,7 +132,7 @@ title: Data Gaps
               <div class='types'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         {% endfor %}
@@ -152,8 +152,8 @@ title: Data Gaps
       <thead>
         <th>Dataset</th>
         <th>Gap Types</th>
-        <th>Modalities</th>
-        <th>Sectors</th>
+        <th>sources</th>
+        <th>topics</th>
       </thead>
       <tbody>
         {% for ds in site.data.data_gaps_datasets %}
@@ -167,9 +167,9 @@ title: Data Gaps
           <tr
             id='{{ dataset.id }}'
             class='data-gaps-details dataset-row'
-            data-sectors='{{ dataset.sectors | jsonify }}'
+            data-topics='{{ dataset.topics | jsonify }}'
             data-existence='{{ dataset.existence }}'
-            data-modalities='{{ dataset.modalities | jsonify }}'
+            data-sources='{{ dataset.sources | jsonify }}'
           >
             <td>
               {{ dataset.name }}
@@ -215,10 +215,10 @@ title: Data Gaps
               <div class='types'></div>
             </td>
             <td>
-              <div class='modalities'></div>
+              <div class='sources'></div>
             </td>
             <td>
-              <div class='sectors'></div>
+              <div class='topics'></div>
             </td>
           </tr>
         {% endfor %}
@@ -340,17 +340,17 @@ title: Data Gaps
 </style>
 
 <script>
-  const sectors = {{ site.data.data_gaps_sectors | jsonify }};
-  const modalities = {{ site.data.data_gaps_data_modalities | jsonify }};
+  const topics = {{ site.data.data_gaps_topics | jsonify }};
+  const sources = {{ site.data.data_gaps_data_sources | jsonify }};
 
   const sectorIcons = {};
-  Object.entries(sectors).forEach(iter => {
+  Object.entries(topics).forEach(iter => {
     const [sectorId, sector] = iter;
     sectorIcons[sectorId] = sector.icon;
   });
 
   const modalityIcons = {};
-  Object.entries(modalities).forEach(iter => {
+  Object.entries(sources).forEach(iter => {
     const [modalityId, modality] = iter;
      modalityIcons[modality.name] = modality.icon;
   });
@@ -398,15 +398,15 @@ title: Data Gaps
     };
 
     const details = Array.from(document.getElementsByClassName('data-gaps-details'));
-    const allSectors = new Set();
+    const alltopics = new Set();
 
     details.forEach(el => {
       const rowTypes = new Set();
 
-      ($(el).data('sectors') || []).forEach(sector => {
-        allSectors.add(sector);
-        $(el).find('.sectors').append(`
-           <a class='tag is-light is-icon-tag' data-sectors='${sector}' href='javascript:void(0)' title='${sectors[sector].name}'>${sectors[sector].icon}</a>
+      ($(el).data('topics') || []).forEach(sector => {
+        alltopics.add(sector);
+        $(el).find('.topics').append(`
+           <a class='tag is-light is-icon-tag' data-topics='${sector}' href='javascript:void(0)' title='${topics[sector].name}'>${topics[sector].icon}</a>
         `);
       });
 
@@ -418,8 +418,8 @@ title: Data Gaps
       $(el).attr('data-types', JSON.stringify(sortedVals(rowTypes)));
     });
 
-    sortedVals(allSectors).forEach(sectorId => {
-      $("#sectors").append(`<option value='${sectorId}'>${sectorIcons[sectorId]} ${sectors[sectorId].name}</option>`);
+    sortedVals(alltopics).forEach(sectorId => {
+      $("#topics").append(`<option value='${sectorId}'>${sectorIcons[sectorId]} ${topics[sectorId].name}</option>`);
     });
 
     const typeIdsToNames = {};
@@ -464,16 +464,16 @@ title: Data Gaps
 
     const allModes = new Set();
     Array.from($('.dataset-row')).forEach(el => {
-      ($(el).data('modalities') || []).forEach(modality => {
+      ($(el).data('sources') || []).forEach(modality => {
         allModes.add(modality);
-        $(el).find('.modalities').append(`
-            <a class='tag is-light is-icon-tag' data-modalities='${modality}' href='javascript:void(0)' title='${modality}'>${modalityIcons[modality]}</a>
+        $(el).find('.sources').append(`
+            <a class='tag is-light is-icon-tag' data-sources='${modality}' href='javascript:void(0)' title='${modality}'>${modalityIcons[modality]}</a>
         `);
       });
     });
 
     sortedVals(allModes).forEach(modality => {
-      $("#modalities").append(`<option value='${modality}'>${modalityIcons[modality]} ${modality}</option>`);
+      $("#sources").append(`<option value='${modality}'>${modalityIcons[modality]} ${modality}</option>`);
     });
 
     $("#search-wrapper select").chosen({ width: '100%' });
@@ -494,9 +494,9 @@ title: Data Gaps
     const filterRows = () => {
       const textSearch = $('#text-search').val();
       prepareMark(textSearch);
-      const selectedSects = new Set(Array.from($("#sectors").val()));
+      const selectedSects = new Set(Array.from($("#topics").val()));
       const selectedTypes = new Set(Array.from($("#gap-types").val()));
-      const selectedModes = new Set(Array.from($("#modalities").val()));
+      const selectedModes = new Set(Array.from($("#sources").val()));
       const filterSets = [selectedSects, selectedTypes, selectedModes];
 
       $(".filterable-table").show();
@@ -530,7 +530,7 @@ title: Data Gaps
       }
 
       const matchesFilters = (el) => {
-        if (!matchesAll(selectedSects, $(el).data('sectors'))) return false;
+        if (!matchesAll(selectedSects, $(el).data('topics'))) return false;
 
         if (textSearch) {
           const elText = $(el).clone().remove('.modal').text().toLowerCase();
@@ -555,9 +555,9 @@ title: Data Gaps
         if (!checkGaps(selectedTypes, 'types')) return false;
 
         if ($(el).hasClass('dataset-row')) {
-          if (!matchesAll(selectedModes, $(el).data('modalities'))) return false;
+          if (!matchesAll(selectedModes, $(el).data('sources'))) return false;
         } else {
-          if (!checkGaps(selectedModes, 'modalities')) return false;
+          if (!checkGaps(selectedModes, 'sources')) return false;
         }
 
         return true;

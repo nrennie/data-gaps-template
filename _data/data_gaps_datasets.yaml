@@ -4,14 +4,13 @@ recRqVr5AVjnpiPJh:
   name: Boiler Data
   data_gaps:
   - recwnytP5YTfbdGcD
-  sectors:
+  topics:
   - recoCHzI27qe9Xzd9
   id: boiler-data
   introduction: "<p>This is a <strong><em>longer description.</em></strong></p>"
-  modalities:
-  - Timeseries
-  - Tabular
-  - Text
+  sources:
+  - Other
+  - CHAIN
   existence: Wish
   short_introduction: This is a short introduction.
   dataset_url: https://www.centreforpublicdata.org/boiler-data
@@ -21,15 +20,15 @@ recPz0swayVMo9sTP:
   name: Unrepresented Defendants
   data_gaps:
   - recNvlKAHB96agZ50
-  sectors:
+  topics:
   - rec8AGIw134PanOsZ
   id: unrepresented-defendants
   introduction: |-
     <p>This is a longer introduction to the problem of unrepresented defendants.</p>
 
     <p>This can have <strong><em>formatting</em></strong> or <a target="_blank" href="https://www.centreforpublicdata.org/">links</a>.</p>
-  modalities:
-  - Tabular
+  sources:
+  - CHAIN
   existence: Existing
   short_introduction: This is a short introduction to an incomplete dataset of unrepresented
     defendants.

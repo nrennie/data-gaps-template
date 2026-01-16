@@ -31,7 +31,7 @@ def process(key, value)
   value
 end
 
-['Use Case', 'Dataset', 'Data Gap', 'Data Gap Details', 'Data Gap Type', 'Sectors', 'Data Modalities'].each do |table_name|
+['Use Case', 'Dataset', 'Data Gap', 'Data Gap Details', 'Data Gap Type', 'Topics', 'Data Sources'].each do |table_name|
   table = Class.new(Airrecord::Table) do
     self.table_name = table_name
     self.base_key = AIRTABLE_BASE

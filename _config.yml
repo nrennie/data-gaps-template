@@ -20,12 +20,12 @@
 #
 
 # Update these for your base -- and also remember to set AIRTABLE_ACCESS_TOKEN in your environment
-airtable_base_id: "appY2hJvi0WWoFOPx"
+airtable_base_id: "appCGMtdXOaqhWh4y"
 edit_gap_form_id: "pagBcFCIqhKBjQLW6"
 new_gap_form_id: "pagmTyuvNXMeVZMMS"
 
 
-title: Your awesome title
+title: Poverty Data Gaps
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this

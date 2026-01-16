@@ -1,0 +1,430 @@
+---
+recov84EGgJzoCqNj:
+  airtable_id: recov84EGgJzoCqNj
+  name: Administrative data on TA
+recuHZtT1NWH6uNY8:
+  airtable_id: recuHZtT1NWH6uNY8
+  name: Analysis of Census data
+recwTabSc2G7sMe2o:
+  airtable_id: recwTabSc2G7sMe2o
+  name: Benefit caps and housing affordability
+recCeEhTNfbOt1VKq:
+  airtable_id: recCeEhTNfbOt1VKq
+  name: Benefit income
+rec0ojI8XuYPWWwKC:
+  airtable_id: rec0ojI8XuYPWWwKC
+  name: Benefit take-up
+recnA5Qjb8wGZxn18:
+  airtable_id: recnA5Qjb8wGZxn18
+  name: Benefits deductions and sanctions
+recNtz9DF9UdxGwYG:
+  airtable_id: recNtz9DF9UdxGwYG
+  name: Benefits uptake
+rec8SzfRLp4h0qAou:
+  airtable_id: rec8SzfRLp4h0qAou
+  name: Child deprivation measurement
+recxEnW0C0235l5Xn:
+  airtable_id: recxEnW0C0235l5Xn
+  name: Child poverty
+recpkZ1KKUFJhTcqu:
+  airtable_id: recpkZ1KKUFJhTcqu
+  name: |-
+    Child poverty
+
+    Ethnicity
+recVYhULOgEFd5ZQB:
+  airtable_id: recVYhULOgEFd5ZQB
+  name: |-
+    Child poverty
+
+    Free school meals
+recpNhaJIbATxCgyR:
+  airtable_id: recpNhaJIbATxCgyR
+  name: |-
+    Child poverty
+
+    Migration
+rec2HQn9YWaQRIwmu:
+  airtable_id: rec2HQn9YWaQRIwmu
+  name: |-
+    Child poverty
+
+    Migration
+
+    NRPF
+recfyC4VdEl3eSiLN:
+  airtable_id: recfyC4VdEl3eSiLN
+  name: Child poverty & ethnicity
+recVo2ZPCbf6RpNtZ:
+  airtable_id: recVo2ZPCbf6RpNtZ
+  name: Child poverty / intra-household inequality
+rec7GkupJXXT2JoJa:
+  airtable_id: rec7GkupJXXT2JoJa
+  name: Cost of living
+rec9Wf0XJkgYhYqpA:
+  airtable_id: rec9Wf0XJkgYhYqpA
+  name: Council Tax Reduction
+recvivWNoRfbAFz3l:
+  airtable_id: recvivWNoRfbAFz3l
+  name: Data sharing
+recPvV6bGmzwXWkGs:
+  airtable_id: recPvV6bGmzwXWkGs
+  name: Deep poverty
+recYpsPnylmpGhOaS:
+  airtable_id: recYpsPnylmpGhOaS
+  name: Deprivation
+reczzlAwSZsPdhNL9:
+  airtable_id: reczzlAwSZsPdhNL9
+  name: Disability
+recaNRa3temuWcF9u:
+  airtable_id: recaNRa3temuWcF9u
+  name: Disability & poverty
+recC5nM0yl5XdsEws:
+  airtable_id: recC5nM0yl5XdsEws
+  name: Early identification of homelessness risk
+rec0hQNDng38nNdTr:
+  airtable_id: rec0hQNDng38nNdTr
+  name: Early-years service integration
+recqt1lB2xBSnFoRA:
+  airtable_id: recqt1lB2xBSnFoRA
+  name: Economic inactivity
+recw7nmUbyQzgTwQa:
+  airtable_id: recw7nmUbyQzgTwQa
+  name: Economic inactivity statistics
+recbzj18RKzD7cq3p:
+  airtable_id: recbzj18RKzD7cq3p
+  name: Economic security
+recu8wurk95vDlQMg:
+  airtable_id: recu8wurk95vDlQMg
+  name: Education – Longitudinal poverty data
+recAYMh0Kw8C8TTYO:
+  airtable_id: recAYMh0Kw8C8TTYO
+  name: Education – Pupil Premium expenditure
+recAK0hbZ7A8yiBIr:
+  airtable_id: recAK0hbZ7A8yiBIr
+  name: Employment statistics
+recbiTH9wajnQj3PC:
+  airtable_id: recbiTH9wajnQj3PC
+  name: Employment status of homeless households
+recqxBG3xtjzOHxiO:
+  airtable_id: recqxBG3xtjzOHxiO
+  name: Employmente
+recoCHzI27qe9Xzd9:
+  airtable_id: recoCHzI27qe9Xzd9
+  name: Energy
+  associated_datasets:
+  - recRqVr5AVjnpiPJh
+  icon: "\U0001F50C"
+rec0PbF2VPiJlPGku:
+  airtable_id: rec0PbF2VPiJlPGku
+  name: |-
+    Energy poverty
+
+    Social security
+recJfmRm3ffS9nl8y:
+  airtable_id: recJfmRm3ffS9nl8y
+  name: Ethnicity & poverty
+recvbo2LO8HlGlL1b:
+  airtable_id: recvbo2LO8HlGlL1b
+  name: Ethnicity and poverty statistics
+rec8puPqNgM3UW9au:
+  airtable_id: rec8puPqNgM3UW9au
+  name: Ethnicity granularity
+recIwsn3CAspqExwt:
+  airtable_id: recIwsn3CAspqExwt
+  name: Family-structure data
+recCaaCmCTkBOuCjS:
+  airtable_id: recCaaCmCTkBOuCjS
+  name: Fiscal multipliers; Fiscal policy projections
+recjVIitKK73VEigg:
+  airtable_id: recjVIitKK73VEigg
+  name: Food banks
+rec9UgPEDbTY0HfyR:
+  airtable_id: rec9UgPEDbTY0HfyR
+  name: Fuel poverty
+recNeh337pEpc8kvY:
+  airtable_id: recNeh337pEpc8kvY
+  name: Gender & childcare
+recLhAOwWYKJUeY7x:
+  airtable_id: recLhAOwWYKJUeY7x
+  name: Geographical analysis of poverty and economics
+recOt83fV08fLx5tJ:
+  airtable_id: recOt83fV08fLx5tJ
+  name: Homelessness
+recfSnA4NmskMbY50:
+  airtable_id: recfSnA4NmskMbY50
+  name: |-
+    Homelessness
+
+    Disability
+recgg4lGffRYOv10v:
+  airtable_id: recgg4lGffRYOv10v
+  name: Homelessness & rough sleeping
+rec6bKqJYHJgDbzF9:
+  airtable_id: rec6bKqJYHJgDbzF9
+  name: Homelessness (Care-leavers)
+reczp6SoOVMzI1tWz:
+  airtable_id: reczp6SoOVMzI1tWz
+  name: Homelessness (referalls)
+rec1AwIzlnUBSu8Jb:
+  airtable_id: rec1AwIzlnUBSu8Jb
+  name: Homelessness / Causes of homelessness
+rec24H9G6rU0kRkD2:
+  airtable_id: rec24H9G6rU0kRkD2
+  name: Homelessness / Temporary accommodation
+reclkqeQ0Fhlp5vRI:
+  airtable_id: reclkqeQ0Fhlp5vRI
+  name: Homelessness and other services
+recDuq5HywOdN4Tfs:
+  airtable_id: recDuq5HywOdN4Tfs
+  name: Homelessness prevention
+recCmGdnXdHknCpGY:
+  airtable_id: recCmGdnXdHknCpGY
+  name: Homelessness – Hidden Homelessness
+recdKG6TAJD9AubRh:
+  airtable_id: recdKG6TAJD9AubRh
+  name: Homelessness – Rough Sleeping
+recKh5JAs2NeOMTgB:
+  airtable_id: recKh5JAs2NeOMTgB
+  name: Homelessness – temporary accommodation
+rec0w60aTOhJ3SKXQ:
+  airtable_id: rec0w60aTOhJ3SKXQ
+  name: Homelessness-intervention evaluation
+recPCnLNdMFsdBiEu:
+  airtable_id: recPCnLNdMFsdBiEu
+  name: Housing & poverty
+recUqmt3lLSGBaZFP:
+  airtable_id: recUqmt3lLSGBaZFP
+  name: Housing Benefit – Temporary Accommodation
+recauveCIPOqFXgcJ:
+  airtable_id: recauveCIPOqFXgcJ
+  name: Housing affordability and benefits
+recd4QRMpJEQMkYP6:
+  airtable_id: recd4QRMpJEQMkYP6
+  name: Housing – LHA
+rec24NaX324mdqtry:
+  airtable_id: rec24NaX324mdqtry
+  name: Immigration status; Asylum Seekers
+reciTh4wot5yQWeWw:
+  airtable_id: reciTh4wot5yQWeWw
+  name: Income and Earnings
+recKDjJ1PgCJyC3uh:
+  airtable_id: recKDjJ1PgCJyC3uh
+  name: Income distribution
+recEk5nGv5BTjV6yS:
+  airtable_id: recEk5nGv5BTjV6yS
+  name: Income growth
+reclNk7wKjNpE5bkw:
+  airtable_id: reclNk7wKjNpE5bkw
+  name: Income levels
+recYkAmTfiuilAM4n:
+  airtable_id: recYkAmTfiuilAM4n
+  name: Income measurement
+recayDQhJAO9NMNub:
+  airtable_id: recayDQhJAO9NMNub
+  name: |-
+    Income measurement
+
+    Poverty
+recje8CAh4g2uZAox:
+  airtable_id: recje8CAh4g2uZAox
+  name: Job classifications
+recDpcNF8aq8324JZ:
+  airtable_id: recDpcNF8aq8324JZ
+  name: Labour market
+rec8AGIw134PanOsZ:
+  airtable_id: rec8AGIw134PanOsZ
+  name: Legal System
+  associated_use_cases:
+  - rec9cpZ6HbUZ2slIP
+  associated_datasets:
+  - recPz0swayVMo9sTP
+  icon: "\U0001F469‍⚖️"
+recFjg7DxRcFibEQX:
+  airtable_id: recFjg7DxRcFibEQX
+  name: Living standards measurement
+recvN74EimiE4fhsT:
+  airtable_id: recvN74EimiE4fhsT
+  name: Local Welfare Assistance
+rechPlUrpQE3Ob7Af:
+  airtable_id: rechPlUrpQE3Ob7Af
+  name: Local area analysis
+recVIl3GVtDD9RAR6:
+  airtable_id: recVIl3GVtDD9RAR6
+  name: Local authority child home visits data
+recA5lICkiMtMt1Sp:
+  airtable_id: recA5lICkiMtMt1Sp
+  name: Long-term poverty impacts – earnings
+recFN8EoAA5nyM3Ts:
+  airtable_id: recFN8EoAA5nyM3Ts
+  name: Material deprivation
+recj1pqlgONUUzwf0:
+  airtable_id: recj1pqlgONUUzwf0
+  name: Measuring incomes
+recr4Dz81aMf4e4k5:
+  airtable_id: recr4Dz81aMf4e4k5
+  name: Mental-health data
+recYcqxk3Q8Ry0Ozh:
+  airtable_id: recYcqxk3Q8Ry0Ozh
+  name: Minimum Income Standards
+recd11PM3jn9o6N1U:
+  airtable_id: recd11PM3jn9o6N1U
+  name: |-
+    Multiple deprivation?
+
+    Devolved services
+recJUp5BUTLazhRBw:
+  airtable_id: recJUp5BUTLazhRBw
+  name: |-
+    Pensioner poverty
+
+    Welfare and social security
+reckWdbIZCm1Q51iU:
+  airtable_id: reckWdbIZCm1Q51iU
+  name: Persistent and deep poverty
+reca55v4hPDetoD2y:
+  airtable_id: reca55v4hPDetoD2y
+  name: Policy impact analysis
+rectsQxGfP0qOEpha:
+  airtable_id: rectsQxGfP0qOEpha
+  name: |-
+    Poverty
+
+    Intra-household dynamics
+recOlGGCGUJDDehx2:
+  airtable_id: recOlGGCGUJDDehx2
+  name: Poverty Premium
+reccxuCwNliDgWqDh:
+  airtable_id: reccxuCwNliDgWqDh
+  name: |-
+    Poverty Premium
+
+    Cost of living
+
+    Insurance
+recytMddVBReyhETd:
+  airtable_id: recytMddVBReyhETd
+  name: Poverty and educaiton
+recnTzj9iuZn67LRq:
+  airtable_id: recnTzj9iuZn67LRq
+  name: Poverty and education
+recUK03bNpVXmoJFE:
+  airtable_id: recUK03bNpVXmoJFE
+  name: Poverty and gender
+reclnpfh4AZp6cmVF:
+  airtable_id: reclnpfh4AZp6cmVF
+  name: Poverty and protected characteristics
+recCiF4bzVSv8Jv7x:
+  airtable_id: recCiF4bzVSv8Jv7x
+  name: Poverty by geography
+reccsB2gvkMVPdadQ:
+  airtable_id: reccsB2gvkMVPdadQ
+  name: Poverty depth and transitions
+recgnYkYneqalUEGS:
+  airtable_id: recgnYkYneqalUEGS
+  name: Poverty in Wales
+recQThGlcO5rgpL1j:
+  airtable_id: recQThGlcO5rgpL1j
+  name: Poverty measurement
+recPYN9SqBCKo0NUu:
+  airtable_id: recPYN9SqBCKo0NUu
+  name: Poverty premium
+recxgyRmniftIQn8Y:
+  airtable_id: recxgyRmniftIQn8Y
+  name: |-
+    Poverty premium
+
+    Car insurance
+
+    Cost of living
+recA7OCHY9EDVqFyd:
+  airtable_id: recA7OCHY9EDVqFyd
+  name: |-
+    Poverty premium
+
+    Cost of living
+rec0dfnSeExATLNG5:
+  airtable_id: rec0dfnSeExATLNG5
+  name: Poverty rates
+recLjWeUQrdxP9S8m:
+  airtable_id: recLjWeUQrdxP9S8m
+  name: |-
+    Poverty rates
+
+    Disability
+recH7HACvWU7XPIu0:
+  airtable_id: recH7HACvWU7XPIu0
+  name: Preventative vs reactive spending effectiveness
+recUD3T8Vxf1E7wVs:
+  airtable_id: recUD3T8Vxf1E7wVs
+  name: Public Policy
+  associated_use_cases:
+  - rec9cpZ6HbUZ2slIP
+  - recAf0fpZFhEiJd1S
+  icon: "\U0001F465"
+recZRlQMInK8CH7m2:
+  airtable_id: recZRlQMInK8CH7m2
+  name: |-
+    Religion
+
+    Ethnicity
+rec7rmD2V7r6igogi:
+  airtable_id: rec7rmD2V7r6igogi
+  name: Rough sleeping
+recu1VMhK8gk1Wj7D:
+  airtable_id: recu1VMhK8gk1Wj7D
+  name: |-
+    Routes out of poverty
+
+    Parental education data
+recOzfKSXYXz8jf71:
+  airtable_id: recOzfKSXYXz8jf71
+  name: Secondary employment
+rectB39nqCfZ03pl0:
+  airtable_id: rectB39nqCfZ03pl0
+  name: Social policy
+rec30mJCNTej2cyRC:
+  airtable_id: rec30mJCNTej2cyRC
+  name: |-
+    Social security
+
+    Ethnicity data
+recSC4y0sghBv7qzO:
+  airtable_id: recSC4y0sghBv7qzO
+  name: Social security & income support
+recs9POZikEIq1iXM:
+  airtable_id: recs9POZikEIq1iXM
+  name: Social tariffs (water affordability)
+recBYFv4opZp5ftOz:
+  airtable_id: recBYFv4opZp5ftOz
+  name: Social tariffs (water)
+recwbgwxp7zwHG8rT:
+  airtable_id: recwbgwxp7zwHG8rT
+  name: Student homelessness
+recoDD6bILAQDgs4V:
+  airtable_id: recoDD6bILAQDgs4V
+  name: Sub-national poverty statistics
+recph2YfVZnPulkJV:
+  airtable_id: recph2YfVZnPulkJV
+  name: TA costs
+reccG0nltlVCiCVXe:
+  airtable_id: reccG0nltlVCiCVXe
+  name: UC claimant characteristics
+rec02MUg3xWvQ1HH9:
+  airtable_id: rec02MUg3xWvQ1HH9
+  name: Universal Credit – Housing element
+recbg2wWmgYGHkZQ1:
+  airtable_id: recbg2wWmgYGHkZQ1
+  name: Unpaid care
+rec2ig8lHJazk61g0:
+  airtable_id: rec2ig8lHJazk61g0
+  name: Very-low incomes
+reczwtmXyX66oCit9:
+  airtable_id: reczwtmXyX66oCit9
+  name: Wealth and assets
+recGPcr9izV4K8XUD:
+  airtable_id: recGPcr9izV4K8XUD
+  name: Welfare and social security
+rec2lrEPM5NYDh61d:
+  airtable_id: rec2lrEPM5NYDh61d
+  name: Wellbeing

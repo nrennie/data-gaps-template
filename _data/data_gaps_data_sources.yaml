@@ -1,0 +1,63 @@
+---
+recBqegWCNBnjs0Fi:
+  airtable_id: recBqegWCNBnjs0Fi
+  name: CHAIN
+  icon: "\U0001F50A"
+recDm2UasvtUTboTc:
+  airtable_id: recDm2UasvtUTboTc
+  name: Census data
+recLouXPy9DE4A880:
+  airtable_id: recLouXPy9DE4A880
+  name: DLUHC admin data
+recD98SBFdiIh3hiw:
+  airtable_id: recD98SBFdiIh3hiw
+  name: DWP admin data
+recZSy8fRVxGlLHw5:
+  airtable_id: recZSy8fRVxGlLHw5
+  name: Devolved data
+recAA19N29mZmq2A7:
+  airtable_id: recAA19N29mZmq2A7
+  name: EU-SILC
+recn4qUJ8EplHv8yK:
+  airtable_id: recn4qUJ8EplHv8yK
+  name: FRS / HBAI
+recNDsEAEhqp15kQQ:
+  airtable_id: recNDsEAEhqp15kQQ
+  name: Home Office admin data
+recm9HXgzplFjlfzy:
+  airtable_id: recm9HXgzplFjlfzy
+  name: Indices of Multiple Deprivation
+rec4Tgtsg505fjO49:
+  airtable_id: rec4Tgtsg505fjO49
+  name: LFS
+rec9xSGFeZHzGpNW7:
+  airtable_id: rec9xSGFeZHzGpNW7
+  name: Minimum Income Standards
+recTSxGp4lDjU6idi:
+  airtable_id: recTSxGp4lDjU6idi
+  name: National Pupil Database
+recje15uTcYblXAqk:
+  airtable_id: recje15uTcYblXAqk
+  name: National Student Survey
+recdP3lyzEWlpj2sQ:
+  airtable_id: recdP3lyzEWlpj2sQ
+  name: Non-existent
+recM6REs3eSCpBuCt:
+  airtable_id: recM6REs3eSCpBuCt
+  name: Not stated
+recYFzMXUXPSEEwyI:
+  airtable_id: recYFzMXUXPSEEwyI
+  name: Other
+  icon: "➕"
+receAykMlfOI9vSK0:
+  airtable_id: receAykMlfOI9vSK0
+  name: Understanding Society
+recgP1qPz4GW4BGsU:
+  airtable_id: recgP1qPz4GW4BGsU
+  name: Universal Credit Data Share
+rec9B7QotS2ugTlVx:
+  airtable_id: rec9B7QotS2ugTlVx
+  name: Unspecified admin data
+recGw0LObBIMVE5YL:
+  airtable_id: recGw0LObBIMVE5YL
+  name: Wealth and Assets Survey

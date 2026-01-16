@@ -4,3 +4,6 @@ _site/
 .jekyll-metadata
 vendor
 .env
+.Rproj.user
+_raw_data/
+*.Rproj
